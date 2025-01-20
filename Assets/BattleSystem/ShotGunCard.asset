@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: ChildClass
+  m_Name: ShotGunCard
   m_EditorClassIdentifier: 
-  CardName: dafa
-  CardHealth: 10
-  Damage: 01000000
-  Position: 00000000
+  CardName: Shot
+  CardHealth: 5
+  Damage: 010000000200000001000000
+  Position: 000000000100000002000000

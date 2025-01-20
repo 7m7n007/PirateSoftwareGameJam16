@@ -7,10 +7,10 @@ using UnityEngine.Events;
 
 public class CardSlot : MonoBehaviour
 {
-    [SerializeField] public CardScriptableObject cardScriptableObject;
+    [SerializeField] public BaseCard CardSO;
     // [SerializeField] TMP_Text cardName;
     [SerializeField] private string CardName;
-    [SerializeField] private int CardHealth;
+    [SerializeField] public int CardHealth;
     [SerializeField] private int CardAttack;
     [SerializeField] private int CardDefense;
     public static event Action ActionDone;
@@ -34,10 +34,10 @@ public class CardSlot : MonoBehaviour
 
     void Start()
     {
-        CardName = cardScriptableObject.CardName;
-        CardHealth = cardScriptableObject.CardHealth;
-        CardAttack = cardScriptableObject.CardAttack;
-        CardDefense = cardScriptableObject.CardDefense;
+        CardName = CardSO.CardName;
+        CardHealth = CardSO.CardHealth;
+        // CardAttack = CardSO.CardAttack;
+        // CardDefense = CardSO.CardDefense;
 
         // cardName = GetComponentInChildren<TMP_Text>();
         // cardName.text = cardScriptableObject.CardName;
@@ -48,22 +48,23 @@ public class CardSlot : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
     public void Action(List<CardSlot> target, List<CardSlot> user, int CardIndex)
     {
         print("Doing Attack");
-        Attack(cardScriptableObject.AttackPattern, cardScriptableObject.PositionPattern, target, user, CardIndex);
+        CardSO.Action(target,user,CardIndex);
+        // Attack(CardSO.AttackPattern, CardSO.PositionPattern, target, user, CardIndex);
     }
     public void Attack(List<int> damage, List<int> Position, List<CardSlot> target, List<CardSlot> user, int CardIndex)
     {
         for (int i = 0; i < damage.Count; i++)
         {
             target[CardIndex + Position[i]].CardHealth -= damage[i];
-            target[CardIndex+Position[i]].updateCardVisual();
+            target[CardIndex + Position[i]].updateCardVisual();
             Debug.DrawLine(user[CardIndex].transform.position, target[CardIndex + Position[i]].transform.position, new Color(UnityEngine.Random.Range(0, 255) / 255, UnityEngine.Random.Range(0, 255) / 255, UnityEngine.Random.Range(0, 255) / 255, 1), 1f);
-           // target.IndexOf(this);
+            // target.IndexOf(this);
         }
         // ActionDone.Invoke();
 
@@ -72,9 +73,9 @@ public class CardSlot : MonoBehaviour
     {
         // Update Visual
         print("Updating Visuals");
-        cardNameVisual.text=CardName.ToString();
-        cardAttackVisual.text=CardAttack.ToString();
-        cardHealthVisual.text=CardHealth.ToString();
+        cardNameVisual.text = CardName.ToString();
+        cardAttackVisual.text = CardAttack.ToString();
+        cardHealthVisual.text = CardHealth.ToString();
 
     }
 

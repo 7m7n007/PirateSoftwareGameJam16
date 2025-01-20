@@ -257,8 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5356fc39496c0244faaf4936bee60996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cardScriptableObject: {fileID: 11400000, guid: a793f589507bde84fb4cb9326f00d1df, type: 2}
-  cardName: {fileID: 0}
+  CardSO: {fileID: 11400000, guid: 7fc363692e9dc4e4e9615ca849533808, type: 2}
   CardName: 
   CardHealth: 0
   CardAttack: 0
