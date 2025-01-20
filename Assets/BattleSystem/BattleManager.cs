@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class BattleManager : MonoBehaviour
@@ -6,35 +7,46 @@ public class BattleManager : MonoBehaviour
     public List<GameObject> PlayerSlots;
     public List<GameObject> EnemySlots;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public void BasicBattle()
     {
-        
-    }
-
-    public void BasicBattle(){
         // Getting Player Cards
-        List<CardScriptableObject> PlayerCards= new List<CardScriptableObject>();
-        foreach(GameObject card in PlayerSlots){
-            PlayerCards.Add(card.GetComponent<Card>().cardScriptableObject);
-        }
-        
-        // Getting Enemy Cards
-        List<CardScriptableObject> EnemyCards= new List<CardScriptableObject>();
-        foreach(GameObject card in EnemySlots){
-            EnemyCards.Add(card.GetComponent<Card>().cardScriptableObject);
+        List<CardSlot> PlayerCards = new List<CardSlot>();
+        foreach (GameObject card in PlayerSlots)
+        {
+            PlayerCards.Add(card.GetComponent<CardSlot>());
         }
 
+        // Getting Enemy Cards
+        List<CardSlot> EnemyCards = new List<CardSlot>();
+        foreach (GameObject card in EnemySlots)
+        {
+            EnemyCards.Add(card.GetComponent<CardSlot>());
+        }
+
+        // for(int i=0;i<5;i++){
+        // PlayerCards[i].Action(EnemyCards,PlayerCards,i);
+        // // Debug.DrawLine(PlayerCards[i].gameObject.transform.position,)
+        // EnemyCards[i].Action(PlayerCards,EnemyCards,i);
+        // }
+
+        Coroutine ActionCoroutine = StartCoroutine(Action(PlayerCards, EnemyCards));
         // First Player Card Executes
         // First Enemy Card Executes
         // Second Player Card Executes
         // Second Enemy Card Executes
 
 
+    }
+    IEnumerator Action(List<CardSlot> PlayerCards, List<CardSlot> EnemyCards)
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            PlayerCards[i].Action(EnemyCards, PlayerCards, i);
+            yield return new WaitForSeconds(2f);
+            // Debug.DrawLine(PlayerCards[i].gameObject.transform.position,)
+            EnemyCards[i].Action(PlayerCards, EnemyCards, i);
+            yield return new WaitForSeconds(2f);
+        }
     }
 }
