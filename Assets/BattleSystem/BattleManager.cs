@@ -14,14 +14,14 @@ public class BattleManager : MonoBehaviour
         List<CardSlot> PlayerCards = new List<CardSlot>();
         foreach (GameObject card in PlayerSlots)
         {
-            PlayerCards.Add(card.GetComponent<CardSlot>());
+            PlayerCards.Add(card.GetComponentInChildren<CardSlot>());
         }
 
         // Getting Enemy Cards
         List<CardSlot> EnemyCards = new List<CardSlot>();
         foreach (GameObject card in EnemySlots)
         {
-            EnemyCards.Add(card.GetComponent<CardSlot>());
+            EnemyCards.Add(card.GetComponentInChildren<CardSlot>());
         }
 
         // for(int i=0;i<5;i++){

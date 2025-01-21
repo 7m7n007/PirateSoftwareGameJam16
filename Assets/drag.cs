@@ -14,6 +14,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     //private Vector3 ParentLocalPosition;
     private void Awake()
     {
+        canvas=GameObject.FindGameObjectWithTag("Canvas").GetComponent<Canvas>();
         rectTransform = GetComponent<RectTransform>();
         canvasGroup = GetComponent<CanvasGroup>();
     }
