@@ -24,7 +24,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     }
     public void OnBeginDrag(PointerEventData eventdata)
     {
-        Debug.Log("OnBeginDrag");
+        // Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
         previousslot = transform.parent;
         eventdata.pointerDrag.transform.SetParent(canvas.gameObject.transform);
@@ -36,7 +36,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     }
     public void OnEndDrag(PointerEventData eventdata)
     {
-        Debug.Log("OnEndDrag");
+        // Debug.Log("OnEndDrag");
         canvasGroup.blocksRaycasts = true;
         // transform.localPosition = ParentLocalPosition;
         if (eventdata.pointerDrag.transform.parent == canvas.gameObject.transform)

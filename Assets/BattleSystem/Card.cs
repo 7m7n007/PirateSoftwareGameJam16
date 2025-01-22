@@ -4,8 +4,9 @@ using TMPro;
 // using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
-public class CardSlot : MonoBehaviour
+public class Card : MonoBehaviour,IPointerClickHandler
 {
     [SerializeField] public BaseCard CardSO;
     // [SerializeField] TMP_Text cardName;
@@ -13,7 +14,7 @@ public class CardSlot : MonoBehaviour
     [SerializeField] public int CardHealth;
     [SerializeField] private int CardAttack;
     [SerializeField] private int CardDefense;
-    public static event Action ActionDone;
+    public static event Action<Card> CardSelected;
 
 
     // Reference To Visual Fields
@@ -23,14 +24,7 @@ public class CardSlot : MonoBehaviour
     // public UnityEvent unityEvent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private void OnEnable()
-    {
-        ActionDone += updateCardVisual;
-    }
-    private void OnDisable()
-    {
-        ActionDone -= updateCardVisual;
-    }
+    
 
     void Start()
     {
@@ -51,13 +45,13 @@ public class CardSlot : MonoBehaviour
         
     }
 
-    public void Action(List<CardSlot> target, List<CardSlot> user, int CardIndex)
+    public void Action(List<Card> target, List<Card> user, int userIndex,int targetIndex)
     {
-        print("Doing Attack");
-        CardSO.Action(target,user,CardIndex);
+        // print("Doing Attack");
+        CardSO.Action(target,user,userIndex,targetIndex);
         // Attack(CardSO.AttackPattern, CardSO.PositionPattern, target, user, CardIndex);
     }
-    public void Attack(List<int> damage, List<int> Position, List<CardSlot> target, List<CardSlot> user, int CardIndex)
+    public void Attack(List<int> damage, List<int> Position, List<Card> target, List<Card> user, int CardIndex)
     {
         for (int i = 0; i < damage.Count; i++)
         {
@@ -72,11 +66,14 @@ public class CardSlot : MonoBehaviour
     public void updateCardVisual()
     {
         // Update Visual
-        print("Updating Visuals");
+        // print("Updating Visuals");
         cardNameVisual.text = CardName.ToString();
         cardAttackVisual.text = CardAttack.ToString();
         cardHealthVisual.text = CardHealth.ToString();
 
     }
-
+    public void OnPointerClick(PointerEventData eventData){
+        CardSelected?.Invoke(this);
+        // print("Click Invoked");
+    }
 }

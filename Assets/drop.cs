@@ -6,7 +6,7 @@ public class drop : MonoBehaviour, IDropHandler
 {
     public void OnDrop (PointerEventData eventData)
     {
-        Debug.Log ("Dropped") ;
+        // Debug.Log ("Dropped") ;
         if (eventData.pointerDrag != null)
         {
             if(transform.childCount <1){

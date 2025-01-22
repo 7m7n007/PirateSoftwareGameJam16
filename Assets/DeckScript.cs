@@ -26,7 +26,7 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     }
     private void DrawCard(Transform Slot){
         GameObject newCard = Instantiate(BlankCard, Slot);
-        newCard.GetComponent<CardSlot>().CardSO = PlayerDeck[Random.Range(0, PlayerDeck.Count)];
+        newCard.GetComponent<Card>().CardSO = PlayerDeck[Random.Range(0, PlayerDeck.Count)];
 
     }
 }
