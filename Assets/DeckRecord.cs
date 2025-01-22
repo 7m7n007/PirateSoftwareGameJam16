@@ -1,0 +1,46 @@
+using System.Collections.Generic;
+using UnityEditor;
+using UnityEngine;
+
+public class DeckRecord : MonoBehaviour
+{
+    public List<BaseCard> DeckCard;
+    public GameObject card;
+
+    public void SaveDeck()
+    { 
+        DeckCard=new List<BaseCard>();
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).childCount !=0)
+            {
+                DeckCard.Add(transform.GetChild(i).GetChild(0).GetComponent<CardSlot>().CardSO);
+
+            }
+
+        }
+    }
+    public void LoadDeck()
+    {
+        for (int i = 0; i < DeckCard.Count; i++)
+        {
+            // transform.GetChild(i);
+
+            GameObject newCard = Instantiate(card, transform.GetChild(i).transform);
+            newCard.GetComponent<CardSlot>().CardSO = DeckCard[i];
+            // newCard.transform.SetParent(Layout.transform);
+
+        }
+    }
+    public void ClearDeck()
+    {
+        for (int i = 0; i < transform.childCount; i++)
+        {
+            if (transform.GetChild(i).childCount != 0)
+            {
+
+                Destroy(transform.GetChild(i).GetChild(0).gameObject);
+            }
+        }
+    }
+}
