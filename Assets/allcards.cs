@@ -13,7 +13,7 @@ public class allcards:MonoBehaviour
         // transform.GetChild(i);
 
         GameObject newCard = Instantiate(card, Layout.transform.GetChild(i).transform);
-        newCard.GetComponent<CardSlot>().CardSO = Allcards[i];
+        newCard.GetComponent<Card>().CardSO = Allcards[i];
         // newCard.transform.SetParent(Layout.transform);
 
        }

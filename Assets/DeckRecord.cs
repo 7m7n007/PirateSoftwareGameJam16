@@ -14,7 +14,7 @@ public class DeckRecord : MonoBehaviour
         {
             if (transform.GetChild(i).childCount !=0)
             {
-                DeckCard.Add(transform.GetChild(i).GetChild(0).GetComponent<CardSlot>().CardSO);
+                DeckCard.Add(transform.GetChild(i).GetChild(0).GetComponent<Card>().CardSO);
 
             }
 
@@ -27,7 +27,7 @@ public class DeckRecord : MonoBehaviour
             // transform.GetChild(i);
 
             GameObject newCard = Instantiate(card, transform.GetChild(i).transform);
-            newCard.GetComponent<CardSlot>().CardSO = DeckCard[i];
+            newCard.GetComponent<Card>().CardSO = DeckCard[i];
             // newCard.transform.SetParent(Layout.transform);
 
         }
