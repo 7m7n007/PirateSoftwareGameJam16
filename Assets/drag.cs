@@ -4,9 +4,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
+public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler , IPointerClickHandler
 {
     [SerializeField] private Canvas canvas;
+    [SerializeField] private AudioClip ClickAudioClip;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -22,12 +23,18 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     {
         //ParentLocalPosition = transform.parent.localPosition;
     }
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        // Debug.Log("OnPointerClick");
+        SoundFxManager.Instance.AudioManager(ClickAudioClip, transform,1f);
+    }
     public void OnBeginDrag(PointerEventData eventdata)
     {
         // Debug.Log("OnBeginDrag");
         canvasGroup.blocksRaycasts = false;
         previousslot = transform.parent;
         eventdata.pointerDrag.transform.SetParent(canvas.gameObject.transform);
+
 
     }
     public void OnDrag(PointerEventData eventdata)

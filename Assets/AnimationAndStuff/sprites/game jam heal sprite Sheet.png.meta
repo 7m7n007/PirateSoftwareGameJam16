@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 4949dc465a019bf4c867be786254cc31
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5770333000833120641
+    second: game jam heal sprite Sheet_0
+  - first:
+      213: 4408259889608229391
+    second: game jam heal sprite Sheet_1
+  - first:
+      213: 3648261043360849242
+    second: game jam heal sprite Sheet_2
+  - first:
+      213: -47921479709355653
+    second: game jam heal sprite Sheet_3
+  - first:
+      213: 2040255215492948612
+    second: game jam heal sprite Sheet_4
+  - first:
+      213: 4564100815742298668
+    second: game jam heal sprite Sheet_5
+  - first:
+      213: 5094247176045353609
+    second: game jam heal sprite Sheet_6
+  - first:
+      213: -7265951825083664392
+    second: game jam heal sprite Sheet_7
+  - first:
+      213: -6494749258200948707
+    second: game jam heal sprite Sheet_8
+  - first:
+      213: -8500528745636772111
+    second: game jam heal sprite Sheet_9
+  - first:
+      213: -5088856091561868612
+    second: game jam heal sprite Sheet_10
+  - first:
+      213: 2913902881863059515
+    second: game jam heal sprite Sheet_11
+  - first:
+      213: 5691523336389081649
+    second: game jam heal sprite Sheet_12
+  - first:
+      213: -8751082217815760289
+    second: game jam heal sprite Sheet_13
+  - first:
+      213: -4995508599506935406
+    second: game jam heal sprite Sheet_14
+  - first:
+      213: 6103865969369161189
+    second: game jam heal sprite Sheet_15
+  - first:
+      213: 1124395129351247737
+    second: game jam heal sprite Sheet_16
+  - first:
+      213: 6459227294769014853
+    second: game jam heal sprite Sheet_17
+  - first:
+      213: 6855432361549753029
+    second: game jam heal sprite Sheet_18
+  - first:
+      213: -7999947153167745854
+    second: game jam heal sprite Sheet_19
+  - first:
+      213: 5294511565308988282
+    second: game jam heal sprite Sheet_20
+  - first:
+      213: 927706525527391021
+    second: game jam heal sprite Sheet_21
+  - first:
+      213: -6940165589229577232
+    second: game jam heal sprite Sheet_22
+  - first:
+      213: -5032672034481835443
+    second: game jam heal sprite Sheet_23
+  - first:
+      213: -5584562209788012839
+    second: game jam heal sprite Sheet_24
+  - first:
+      213: 2663103309927022859
+    second: game jam heal sprite Sheet_25
+  - first:
+      213: -3299024911279652709
+    second: game jam heal sprite Sheet_26
+  - first:
+      213: -6821724800793161716
+    second: game jam heal sprite Sheet_27
+  - first:
+      213: -1555042772164879137
+    second: game jam heal sprite Sheet_28
+  - first:
+      213: 2542168768443329851
+    second: game jam heal sprite Sheet_29
+  - first:
+      213: 2901753135394114617
+    second: game jam heal sprite Sheet_30
+  - first:
+      213: 3086673896878724169
+    second: game jam heal sprite Sheet_31
+  - first:
+      213: -2300736730772518282
+    second: game jam heal sprite Sheet_32
+  - first:
+      213: 59935338947629880
+    second: game jam heal sprite Sheet_33
+  - first:
+      213: 7779742271350025974
+    second: game jam heal sprite Sheet_34
+  - first:
+      213: 5069969445010001091
+    second: game jam heal sprite Sheet_35
+  - first:
+      213: -4510993837314184921
+    second: game jam heal sprite Sheet_36
+  - first:
+      213: -7559138572767834701
+    second: game jam heal sprite Sheet_37
+  - first:
+      213: -2703656137442601547
+    second: game jam heal sprite Sheet_38
+  - first:
+      213: -5330064649361216318
+    second: game jam heal sprite Sheet_39
+  - first:
+      213: 3097639703920414332
+    second: game jam heal sprite Sheet_40
+  - first:
+      213: -7478669645457606930
+    second: game jam heal sprite Sheet_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: game jam heal sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f76c0a155b8abefa0800000000000000
+      internalID: -5770333000833120641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game jam heal sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0283bd73094d2d30800000000000000
+      internalID: 4408259889608229391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game jam heal sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d5b61f61a31a230800000000000000
+      internalID: 3648261043360849242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game jam heal sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7110d80bafb55ff0800000000000000
+      internalID: -47921479709355653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: d004a52afe8dd4543b13fefe6ce705e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      game jam heal sprite Sheet_0: -5770333000833120641
+      game jam heal sprite Sheet_1: 4408259889608229391
+      game jam heal sprite Sheet_2: 3648261043360849242
+      game jam heal sprite Sheet_3: -47921479709355653
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

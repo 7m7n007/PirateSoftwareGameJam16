@@ -1,0 +1,430 @@
+fileFormatVersion: 2
+guid: 513e2dd2501ddf94681856f7391333ed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7181252952422787699
+    second: gamejam blast sprite Sheet_0
+  - first:
+      213: -8170665914113639088
+    second: gamejam blast sprite Sheet_1
+  - first:
+      213: 6178007228473306345
+    second: gamejam blast sprite Sheet_2
+  - first:
+      213: 498520430380900146
+    second: gamejam blast sprite Sheet_3
+  - first:
+      213: -1387181344936730666
+    second: gamejam blast sprite Sheet_4
+  - first:
+      213: -4525726335827770421
+    second: gamejam blast sprite Sheet_5
+  - first:
+      213: -5749104368626276150
+    second: gamejam blast sprite Sheet_6
+  - first:
+      213: 5850142326478649730
+    second: gamejam blast sprite Sheet_7
+  - first:
+      213: -1708137257377372777
+    second: gamejam blast sprite Sheet_8
+  - first:
+      213: -196606062908234298
+    second: gamejam blast sprite Sheet_9
+  - first:
+      213: 1430392245806793023
+    second: gamejam blast sprite Sheet_10
+  - first:
+      213: 767106574383633841
+    second: gamejam blast sprite Sheet_11
+  - first:
+      213: 8489391821183931879
+    second: gamejam blast sprite Sheet_12
+  - first:
+      213: -6899736333060955346
+    second: gamejam blast sprite Sheet_13
+  - first:
+      213: 8203409803748352154
+    second: gamejam blast sprite Sheet_14
+  - first:
+      213: 6628333171431417881
+    second: gamejam blast sprite Sheet_15
+  - first:
+      213: 6405101975872085610
+    second: gamejam blast sprite Sheet_16
+  - first:
+      213: -1591571150652392327
+    second: gamejam blast sprite Sheet_17
+  - first:
+      213: 8659160897497518368
+    second: gamejam blast sprite Sheet_18
+  - first:
+      213: -5321352687665432669
+    second: gamejam blast sprite Sheet_19
+  - first:
+      213: 3903512314939198899
+    second: gamejam blast sprite Sheet_20
+  - first:
+      213: -8157275505369258101
+    second: gamejam blast sprite Sheet_21
+  - first:
+      213: -4300751364853089142
+    second: gamejam blast sprite Sheet_22
+  - first:
+      213: 3433540892815836817
+    second: gamejam blast sprite Sheet_23
+  - first:
+      213: -3852094725112866802
+    second: gamejam blast sprite Sheet_24
+  - first:
+      213: -5493005371308976609
+    second: gamejam blast sprite Sheet_25
+  - first:
+      213: -8520835365946932713
+    second: gamejam blast sprite Sheet_26
+  - first:
+      213: -507566914787472146
+    second: gamejam blast sprite Sheet_27
+  - first:
+      213: 2280466097178704796
+    second: gamejam blast sprite Sheet_28
+  - first:
+      213: -8735235903244986335
+    second: gamejam blast sprite Sheet_29
+  - first:
+      213: -4494064712811395816
+    second: gamejam blast sprite Sheet_30
+  - first:
+      213: 5664261895135891515
+    second: gamejam blast sprite Sheet_31
+  - first:
+      213: -6478161283498413875
+    second: gamejam blast sprite Sheet_32
+  - first:
+      213: -1159790702822259836
+    second: gamejam blast sprite Sheet_33
+  - first:
+      213: 2312659634591559764
+    second: gamejam blast sprite Sheet_34
+  - first:
+      213: 1776125766998833681
+    second: gamejam blast sprite Sheet_35
+  - first:
+      213: 8435246986864909806
+    second: gamejam blast sprite Sheet_36
+  - first:
+      213: 696322175058007753
+    second: gamejam blast sprite Sheet_37
+  - first:
+      213: 2191368411031379545
+    second: gamejam blast sprite Sheet_38
+  - first:
+      213: 6822806827123077556
+    second: gamejam blast sprite Sheet_39
+  - first:
+      213: 3089668966791125243
+    second: gamejam blast sprite Sheet_40
+  - first:
+      213: 3529453775629667356
+    second: gamejam blast sprite Sheet_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37aa267238fe8a360800000000000000
+      internalID: 7181252952422787699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05d3dd224a6fb9e80800000000000000
+      internalID: -8170665914113639088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec62f087d0bcb550800000000000000
+      internalID: 6178007228473306345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fd02ea0b91be600800000000000000
+      internalID: 498520430380900146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6df5ff79aedbfbce0800000000000000
+      internalID: -1387181344936730666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 650
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc30b5a30e36131c0800000000000000
+      internalID: -4525726335827770421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: gamejam blast sprite Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac8626b69041730b0800000000000000
+      internalID: -5749104368626276150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0abb5cf4f4089d94a80b98bedf8e96e5
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      gamejam blast sprite Sheet_0: 7181252952422787699
+      gamejam blast sprite Sheet_1: -8170665914113639088
+      gamejam blast sprite Sheet_2: 6178007228473306345
+      gamejam blast sprite Sheet_3: 498520430380900146
+      gamejam blast sprite Sheet_4: -1387181344936730666
+      gamejam blast sprite Sheet_5: -4525726335827770421
+      gamejam blast sprite Sheet_6: -5749104368626276150
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
