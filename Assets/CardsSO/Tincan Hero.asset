@@ -10,9 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: Gun
+  m_Name: Tincan Hero
   m_EditorClassIdentifier: 
-  CardName: Gun
+  CardName: TempName
   CardHealth: 5
-  Damage: 01000000
+  CardSprite: {fileID: 2235848740429849776, guid: 2afa09448004c3f45a601c9f45e8bcf6, type: 3}
+  selfTargeting: 0
+  Damage: 04000000
   Position: 00000000

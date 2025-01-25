@@ -7,8 +7,12 @@ public abstract class BaseCard:ScriptableObject
 {
     public string CardName="Card";
     public int CardHealth;
-    public abstract void Action(List<Card> target, List<Card> user, int userIndex,int targetIndex);
-    public virtual void Attack(List<int> damages,List<int> positions){
+    // public Card target;
+    public Sprite CardSprite;
+    
+    public bool selfTargeting;
+    public abstract void Action(Card target);
+    public virtual void Attack(int damage){
         
     }
 }

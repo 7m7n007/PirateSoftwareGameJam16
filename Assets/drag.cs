@@ -33,6 +33,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     public void OnDrag(PointerEventData eventdata)
     {
         rectTransform.anchoredPosition += eventdata.delta / canvas.scaleFactor;
+        // Vector3.Lerp(rectTransform.anchoredPosition,eventdata.delta / canvas.scaleFactor,Time.deltaTime);
     }
     public void OnEndDrag(PointerEventData eventdata)
     {

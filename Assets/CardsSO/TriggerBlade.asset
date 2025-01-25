@@ -9,12 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 92b62b7e7f22aea458a3ed07513af86f, type: 3}
-  m_Name: GunCard
+  m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
+  m_Name: TriggerBlade
   m_EditorClassIdentifier: 
-  CardName: dun
-  CardHealth: 10
-  CardAttack: 10
-  CardDefense: 10
-  AttackPattern: 01000000
-  PositionPattern: 00000000
+  CardName: TempName
+  CardHealth: 5
+  CardSprite: {fileID: 2235848740429849776, guid: 2afa09448004c3f45a601c9f45e8bcf6, type: 3}
+  selfTargeting: 0
+  Damage: 04000000
+  Position: 00000000

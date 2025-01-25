@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class DeckRecord : MonoBehaviour
 {
-    public List<BaseCard> DeckCard;
+    // [SerializeField] List<BaseCard> DeckCard;
     public GameObject card;
+    private void Awake() {
+        // DeckCard=GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck;
+    }
 
     public void SaveDeck()
     { 
-        DeckCard=new List<BaseCard>();
+        GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck=new List<BaseCard>();
         for (int i = 0; i < transform.childCount; i++)
         {
             if (transform.GetChild(i).childCount !=0)
             {
-                DeckCard.Add(transform.GetChild(i).GetChild(0).GetComponent<Card>().CardSO);
+                GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck.Add(transform.GetChild(i).GetChild(0).GetComponent<Card>().CardSO);
 
             }
 
@@ -22,12 +25,12 @@ public class DeckRecord : MonoBehaviour
     }
     public void LoadDeck()
     {
-        for (int i = 0; i < DeckCard.Count; i++)
+        for (int i = 0; i < GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck.Count; i++)
         {
             // transform.GetChild(i);
 
             GameObject newCard = Instantiate(card, transform.GetChild(i).transform);
-            newCard.GetComponent<Card>().CardSO = DeckCard[i];
+            newCard.GetComponent<Card>().CardSO = GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck[i];
             // newCard.transform.SetParent(Layout.transform);
 
         }
