@@ -4,7 +4,11 @@ using UnityEngine;
 public class CardsData : MonoBehaviour
 {
     public List<BaseCard> Deck;
+    public List<BaseCard> UnlockedCards;
+    
     public List<BaseCard> AllCards;
+
+    public List<BaseCard> ShopCards;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

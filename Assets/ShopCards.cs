@@ -2,13 +2,13 @@ using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
-public class allcards:MonoBehaviour
+public class ShopCards:MonoBehaviour
 {
-    [SerializeField] List<BaseCard> Allcards;
+    [SerializeField] List<BaseCard> shopCards;
     public GameObject Layout;
     public GameObject card;
     private void Awake() {
-        Allcards=GameObject.FindWithTag("GameController").GetComponent<CardsData>().UnlockedCards;
+        shopCards=GameObject.FindWithTag("GameController").GetComponent<CardsData>().UnlockedCards;
     }
     public void Start()
     {
