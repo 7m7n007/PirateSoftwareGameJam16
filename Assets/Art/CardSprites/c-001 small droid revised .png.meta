@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      c-001 small droid revised _0: 2235848740429849776
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

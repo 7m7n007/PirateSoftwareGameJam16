@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      c-004 comet slasher_0: 3969225834033394578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

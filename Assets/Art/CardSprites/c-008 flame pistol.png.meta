@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      c-008 flame pistol_0: 1465743748226434676
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
