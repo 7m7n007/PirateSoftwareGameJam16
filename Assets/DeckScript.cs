@@ -8,6 +8,7 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject PlayerHand;
     [SerializeField] List<BaseCard> PlayerDeck;
     [SerializeField] GameObject BlankCard;
+    [SerializeField] AudioClip DrawCardAudioClip;
     // [SerializeField] GameObject EmptySlot;
     private void Awake()
     {
@@ -44,6 +45,8 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
         int randCardIndex = Random.Range(0, PlayerDeck.Count);
         newCard.GetComponent<Card>().CardSO = PlayerDeck[randCardIndex];
         PlayerDeck.RemoveAt(randCardIndex);
+        
+        SoundFxManager.Instance.AudioManager(DrawCardAudioClip, transform,1f);
 
     }
 }

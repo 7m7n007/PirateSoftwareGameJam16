@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class StartButton : MonoBehaviour
         
     }
     public void StartGame(string SceneName){
+        // SceneController.instance
         GameController.GetComponent<SceneController>().LoadScene(SceneName);
     }
 }

@@ -28,7 +28,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public bool isActive;
     public bool targetSelf;
     public Card target;
-    [SerializeField] AnimatorOverrideController animatorOverrideController;
+    private Animator animator;
+    private AnimatorOverrideController animatorOverrideController;
     [SerializeField] AnimationClip animationClip;
     // public UnityEvent unityEvent;
 
@@ -43,6 +44,10 @@ public class Card : MonoBehaviour, IPointerClickHandler
         CardSprite = CardSO.CardSprite;
         targetSelf = CardSO.selfTargeting;
         target=null;
+        animator = GetComponentInChildren<Animator>();
+
+        animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        animator.runtimeAnimatorController = animatorOverrideController;
         // CardAttack = CardSO.CardAttack;
         // CardDefense = CardSO.CardDefense;
 
@@ -57,8 +62,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
     {
         if(target!=null){
             // add -1 to the z axis
-            lineRenderer.SetPosition(0,new Vector3(transform.position.x,transform.position.y,-1));
-            lineRenderer.SetPosition(1,new Vector3(target.transform.position.x,target.transform.position.y,-1));
+            lineRenderer.SetPosition(0,new Vector3(transform.position.x,transform.position.y,0));
+            lineRenderer.SetPosition(1,new Vector3(target.transform.position.x,target.transform.position.y,0));
             // Debug.DrawLine(transform.position, target.transform.position);
         }
         if (isActive)
@@ -116,11 +121,12 @@ public void Action(){
             CardSelected?.Invoke(this);
             // animatorOverrideController
         }
-            changeAnimation(animationClip);
+            // PlayAnim(animationClip);
         // print("Click Invoked");
     }
-    public void changeAnimation(AnimationClip animationClip){
+    public void PlayAnim(AnimationClip animationClip){
 
-            // print(animatorOverrideController.ApplyOverrides()));
+            print(animatorOverrideController["BaseAttackAnim"]=animationClip);
+            animator.SetTrigger("Attack");
     }
 }

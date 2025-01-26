@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      c-007 drill gun_0: 3332579988083753321
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

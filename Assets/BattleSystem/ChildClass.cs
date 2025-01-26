@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
 
 [CreateAssetMenu(fileName = "ChildCard", menuName = "ChildCard", order = 0)]
-public class ChildClass : BaseCard
+public class ChildCard : BaseCard
 {
     // [SerializeField] public string CardName;
     // [SerializeField] public int CardHealth;
     [SerializeField] public List<int> Damage;
     [SerializeField] public List<int> Position;
+    [SerializeField] public AnimationClip AttackClip;
 
     // [SerializeField] public List<int> AttackPattern;
     // [SerializeField] public List<int> PositionPattern;
@@ -40,6 +41,7 @@ public class ChildClass : BaseCard
     public override void Action(Card target)
     {
         Attack(target, Damage[0]);
+        target.PlayAnim(AttackClip);
         // throw new System.NotImplementedException();
     }
     public void Attack(Card target, int Damage)

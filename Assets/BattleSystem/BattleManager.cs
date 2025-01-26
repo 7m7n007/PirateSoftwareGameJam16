@@ -5,6 +5,7 @@ using System;
 using UnityEditor;
 using JetBrains.Annotations;
 using UnityEngine.UI;
+using Unity.VisualScripting;
 
 public class BattleManager : MonoBehaviour
 {
@@ -15,6 +16,10 @@ public class BattleManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public Card LastSelectedCard;
     public BattleStages battleStages;
+    [SerializeField] changePhaseImg changePhaseImg;
+
+    // Functions
+
     private void OnEnable()
     {
         Card.CardSelected += SelectCard;
@@ -25,6 +30,7 @@ public class BattleManager : MonoBehaviour
     }
     public void BasicBattle()
     {
+        changePhaseImg.NextPhase();
         // Getting Player Cards
         List<Card> PlayerCards = new List<Card>();
         foreach (GameObject card in PlayerSlots)
@@ -60,6 +66,7 @@ public class BattleManager : MonoBehaviour
 
         if (battleStages == BattleStages.EnemyDecides)
         {
+
             targets = EnemyAi(EnemyCards, PlayerCards);
             for (int i = 0; i < targets.Count; i++)
             {
@@ -203,7 +210,7 @@ public class BattleManager : MonoBehaviour
                 }
             }
         }
-                    AttackingCard.target = null;
+        AttackingCard.target = null;
         battleStages += 1;
         // yield return new WaitForSeconds(0);
     }
@@ -251,19 +258,29 @@ public class BattleManager : MonoBehaviour
     }
     public List<Card> EnemyAi(List<Card> EnemyCards, List<Card> PlayerCards)
     {
+        List<Card> playerCardNotNull=PlayerCards;
+        playerCardNotNull.RemoveAll(x=>!x);
+
+        List<Card> enemyCardNotNull=EnemyCards;
+        enemyCardNotNull.RemoveAll(x=>!x);
+
         List<Card> targets = new List<Card>();
         foreach (Card enemy in EnemyCards)
         {
-            // targets.Add(PlayerCards[UnityEngine.Random.Range(0, PlayerCards.Count)]);
-            if (enemy.targetSelf == false)
+            if (enemy != null)
             {
+                
+                // targets.Add(PlayerCards[UnityEngine.Random.Range(0, PlayerCards.Count)]);
+                if (enemy.targetSelf == false)
+                {
+                    
+                    enemy.target = PlayerCards[UnityEngine.Random.Range(0, playerCardNotNull.Count)];
+                }
+                else
+                {
+                    enemy.target = EnemyCards[UnityEngine.Random.Range(0, enemyCardNotNull.Count)];
 
-                enemy.target = PlayerCards[UnityEngine.Random.Range(0, PlayerCards.Count)];
-            }
-            else
-            {
-                enemy.target = EnemyCards[UnityEngine.Random.Range(0, EnemyCards.Count)];
-
+                }
             }
         }
         return targets;

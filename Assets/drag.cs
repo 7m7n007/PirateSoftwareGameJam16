@@ -8,6 +8,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
 {
     [SerializeField] private Canvas canvas;
     [SerializeField] private AudioClip ClickAudioClip;
+    [SerializeField] private AudioClip PickAudioClip;
 
     private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -34,6 +35,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
         canvasGroup.blocksRaycasts = false;
         previousslot = transform.parent;
         eventdata.pointerDrag.transform.SetParent(canvas.gameObject.transform);
+        // SoundFxManager.Instance.AudioManager(PickAudioClip, transform,1f);
 
 
     }

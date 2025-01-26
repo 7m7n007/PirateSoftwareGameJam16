@@ -98,8 +98,8 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 0.4943396, g: 0.49154145, b: 0.49154145, a: 1}
-    m_HighlightedColor: {r: 0.23018861, g: 0.22019929, b: 0.22019929, a: 1}
+    m_NormalColor: {r: 0.4943396, g: 0.49154145, b: 0.49154145, a: 0.49411765}
+    m_HighlightedColor: {r: 0.23018861, g: 0.22019929, b: 0.22019929, a: 0.5058824}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -130,3 +130,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afee9fdf82579af4ab32ba2faade3aab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  DropAudioClip: {fileID: 8300000, guid: 4c352f956814569408102639863d262c, type: 3}

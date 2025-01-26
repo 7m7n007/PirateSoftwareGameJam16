@@ -1,0 +1,819 @@
+fileFormatVersion: 2
+guid: c8506cf200133aa4481bddccfa9352b8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7825943047247358287
+    second: card lv up sprite sheet_0
+  - first:
+      213: -605704799614310663
+    second: card lv up sprite sheet_1
+  - first:
+      213: -393285536933461433
+    second: card lv up sprite sheet_2
+  - first:
+      213: -4364755509400606645
+    second: card lv up sprite sheet_3
+  - first:
+      213: -3154979432188418752
+    second: card lv up sprite sheet_4
+  - first:
+      213: 1256921176126900550
+    second: card lv up sprite sheet_5
+  - first:
+      213: 5235906801638255954
+    second: card lv up sprite sheet_6
+  - first:
+      213: -3537750365659790968
+    second: card lv up sprite sheet_7
+  - first:
+      213: 1830601863931071952
+    second: card lv up sprite sheet_8
+  - first:
+      213: 8244803694613775490
+    second: card lv up sprite sheet_9
+  - first:
+      213: 6715858441537915155
+    second: card lv up sprite sheet_10
+  - first:
+      213: -3630459797539566146
+    second: card lv up sprite sheet_11
+  - first:
+      213: 333154953622164935
+    second: card lv up sprite sheet_12
+  - first:
+      213: 1441939968562324526
+    second: card lv up sprite sheet_13
+  - first:
+      213: 3717635091434368387
+    second: card lv up sprite sheet_14
+  - first:
+      213: 2645263241149738081
+    second: card lv up sprite sheet_15
+  - first:
+      213: -330079539816639533
+    second: card lv up sprite sheet_16
+  - first:
+      213: 3049750914376895691
+    second: card lv up sprite sheet_17
+  - first:
+      213: -1779609631076485902
+    second: card lv up sprite sheet_18
+  - first:
+      213: -1262519794315381681
+    second: card lv up sprite sheet_19
+  - first:
+      213: 6441559815372235121
+    second: card lv up sprite sheet_20
+  - first:
+      213: 6168282448698295584
+    second: card lv up sprite sheet_21
+  - first:
+      213: -5403943768496535832
+    second: card lv up sprite sheet_22
+  - first:
+      213: 4631445638942705044
+    second: card lv up sprite sheet_23
+  - first:
+      213: -168062038218004685
+    second: card lv up sprite sheet_24
+  - first:
+      213: 4118155283100782436
+    second: card lv up sprite sheet_25
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1.3
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: card lv up sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f49ed93ecb55b9c60800000000000000
+      internalID: 7825943047247358287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f66d34a1ba1897f0800000000000000
+      internalID: -605704799614310663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74248cb43e4ca8af0800000000000000
+      internalID: -393285536933461433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b486fba5df54d63c0800000000000000
+      internalID: -4364755509400606645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045eeb61ce24734d0800000000000000
+      internalID: -3154979432188418752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649c5b5762b717110800000000000000
+      internalID: 1256921176126900550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25d23bcbe7da9a840800000000000000
+      internalID: 5235906801638255954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88107d649c267eec0800000000000000
+      internalID: -3537750365659790968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0dd87c042ba976910800000000000000
+      internalID: 1830601863931071952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2844844074d6b6270800000000000000
+      internalID: 8244803694613775490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1330
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3190da1aba5833d50800000000000000
+      internalID: 6715858441537915155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 1460
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd41549c040e9dc0800000000000000
+      internalID: -3630459797539566146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 1595
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c59fc94aaa9f9400800000000000000
+      internalID: 333154953622164935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 1729
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e24689df2ccc20410800000000000000
+      internalID: 1441939968562324526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38de8753b61b79330800000000000000
+      internalID: 3717635091434368387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 1994
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ce02217ecd5b420800000000000000
+      internalID: 2645263241149738081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 2126
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d3da9948625b6bf0800000000000000
+      internalID: -330079539816639533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 2261
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc8bd06c44e25a20800000000000000
+      internalID: 3049750914376895691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 2392
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f472d4287e8d47e0800000000000000
+      internalID: -1779609631076485902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44bee9afe0aa7ee0800000000000000
+      internalID: -1262519794315381681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2660
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17161b2f584056950800000000000000
+      internalID: 6441559815372235121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02540f4c4342a9550800000000000000
+      internalID: 6168282448698295584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 2925
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e6049c16c55105b0800000000000000
+      internalID: -5403943768496535832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3058
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49546b92543364040800000000000000
+      internalID: 4631445638942705044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 3191
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 337a9c7777ceaadf0800000000000000
+      internalID: -168062038218004685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: card lv up sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 3324
+        y: 0
+        width: 131
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cce988785d1bf4447b6825670a361986
+      internalID: -118778246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a2811d124336e4441a5eeaa4863014d6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      card lv up sprite sheet_0: 7825943047247358287
+      card lv up sprite sheet_1: -605704799614310663
+      card lv up sprite sheet_10: 6715858441537915155
+      card lv up sprite sheet_11: -3630459797539566146
+      card lv up sprite sheet_12: 333154953622164935
+      card lv up sprite sheet_13: 1441939968562324526
+      card lv up sprite sheet_14: 3717635091434368387
+      card lv up sprite sheet_15: 2645263241149738081
+      card lv up sprite sheet_16: -330079539816639533
+      card lv up sprite sheet_17: 3049750914376895691
+      card lv up sprite sheet_18: -1779609631076485902
+      card lv up sprite sheet_19: -1262519794315381681
+      card lv up sprite sheet_2: -393285536933461433
+      card lv up sprite sheet_20: 6441559815372235121
+      card lv up sprite sheet_21: 6168282448698295584
+      card lv up sprite sheet_22: -5403943768496535832
+      card lv up sprite sheet_23: 4631445638942705044
+      card lv up sprite sheet_24: -168062038218004685
+      card lv up sprite sheet_25: -118778246
+      card lv up sprite sheet_3: -4364755509400606645
+      card lv up sprite sheet_4: -3154979432188418752
+      card lv up sprite sheet_5: 1256921176126900550
+      card lv up sprite sheet_6: 5235906801638255954
+      card lv up sprite sheet_7: -3537750365659790968
+      card lv up sprite sheet_8: 1830601863931071952
+      card lv up sprite sheet_9: 8244803694613775490
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

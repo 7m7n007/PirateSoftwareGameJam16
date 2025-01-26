@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Shot Gun
   CardHealth: 5
+  CardSprite: {fileID: 3332579988083753321, guid: 3f52da62d3451cd46b44a0afc2c801e1, type: 3}
   selfTargeting: 0
   Damage: 010000000100000001000000
   Position: ffffffff0000000001000000
+  AttackClip: {fileID: 7400000, guid: 4d466a1fef974414e9019a7b3d40e41c, type: 2}

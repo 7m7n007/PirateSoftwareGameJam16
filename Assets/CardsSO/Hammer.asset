@@ -18,3 +18,4 @@ MonoBehaviour:
   selfTargeting: 0
   Damage: 04000000
   Position: 00000000
+  AttackClip: {fileID: 7400000, guid: 4d466a1fef974414e9019a7b3d40e41c, type: 2}
