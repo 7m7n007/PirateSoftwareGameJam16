@@ -30,6 +30,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public Card target;
     private Animator animator;
     private AnimatorOverrideController animatorOverrideController;
+    public bool runSpawnAnim;
+    public AnimationClip SpawnAnim;
     [SerializeField] AnimationClip animationClip;
     // public UnityEvent unityEvent;
 
@@ -54,6 +56,9 @@ public class Card : MonoBehaviour, IPointerClickHandler
         // cardName = GetComponentInChildren<TMP_Text>();
         // cardName.text = cardScriptableObject.CardName;
         updateCardVisual();
+        if(runSpawnAnim){
+            PlayAnim(SpawnAnim);
+        }
         // print(ScriptableObject.CreateInstance(cardScriptableObject.GetType()));
     }
 
@@ -81,7 +86,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
     }
 
 public void Action(){
-   CardSO.Action(target); 
+   CardSO.Action(this,target); 
+   
 }
 // public void Attack(int damage){
 //     target.CardHealth-=damage;
@@ -126,7 +132,7 @@ public void Action(){
     }
     public void PlayAnim(AnimationClip animationClip){
 
-            print(animatorOverrideController["BaseAttackAnim"]=animationClip);
+            animatorOverrideController["BaseAttackAnim"]=animationClip;
             animator.SetTrigger("Attack");
     }
 }

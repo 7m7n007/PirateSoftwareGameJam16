@@ -16,7 +16,7 @@ public class SoundFxManager : MonoBehaviour
     public void AudioManager(AudioClip audioClip , Transform spawnTransform , float volume)
     {
        AudioSource audioSource = Instantiate(SoundFXSource, spawnTransform.position, Quaternion.identity);
-
+        
        audioSource.clip = audioClip;
        audioSource.volume = volume;
        audioSource.Play();
@@ -40,6 +40,9 @@ public class SoundFxManager : MonoBehaviour
        Destroy(audioSource.gameObject, audioLength);
 
 
+    }
+    public void StopMusicFx(){
+        SoundFXSource.Stop();
     }
 }
 

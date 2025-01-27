@@ -10,7 +10,9 @@ public class ChildCard : BaseCard
     // [SerializeField] public int CardHealth;
     [SerializeField] public List<int> Damage;
     [SerializeField] public List<int> Position;
-    [SerializeField] public AnimationClip AttackClip;
+    [SerializeField] public AnimationClip AttackingClip;
+    [SerializeField] public AnimationClip TargetHitClip;
+    [SerializeField] public AudioClip AttackingSFX;
 
     // [SerializeField] public List<int> AttackPattern;
     // [SerializeField] public List<int> PositionPattern;
@@ -38,10 +40,14 @@ public class ChildCard : BaseCard
     //     // ActionDone.Invoke();
 
     // }
-    public override void Action(Card target)
+    public override void Action(Card user,Card target)
     {
         Attack(target, Damage[0]);
-        target.PlayAnim(AttackClip);
+        
+        SoundFxManager.Instance.AudioManager(AttackingSFX,GameObject.FindWithTag("Canvas").transform, 1f);
+        user.PlayAnim(AttackingClip);
+        target.PlayAnim(TargetHitClip);
+        
         // throw new System.NotImplementedException();
     }
     public void Attack(Card target, int Damage)

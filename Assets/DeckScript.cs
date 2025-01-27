@@ -1,5 +1,7 @@
+using System;
+using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+// using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -8,11 +10,18 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     [SerializeField] GameObject PlayerHand;
     [SerializeField] List<BaseCard> PlayerDeck;
     [SerializeField] GameObject BlankCard;
-    [SerializeField] AudioClip DrawCardAudioClip;
+    [SerializeField] AudioClip DrawCardSingleAudioClip;
+    [SerializeField] AudioClip DrawCardMultipleAudioClip;
+    [SerializeField] AnimationClip SpawnAnim;
+    [SerializeField] int StartingCards;
     // [SerializeField] GameObject EmptySlot;
     private void Awake()
     {
         PlayerDeck = GameObject.FindWithTag("GameController").GetComponent<CardsData>().Deck;
+    }
+    private void Start()
+    {
+        DrawFirstHand();
     }
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -39,14 +48,34 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
         }
 
     }
-    private void DrawCard(Transform Slot)
+    private void DrawCard(Transform Slot,bool isSingle=true)
     {
         GameObject newCard = Instantiate(BlankCard, Slot);
-        int randCardIndex = Random.Range(0, PlayerDeck.Count);
+        int randCardIndex = UnityEngine.Random.Range(0, PlayerDeck.Count);
         newCard.GetComponent<Card>().CardSO = PlayerDeck[randCardIndex];
+        newCard.GetComponent<Card>().runSpawnAnim = true;
+        newCard.GetComponent<Card>().SpawnAnim = SpawnAnim;
         PlayerDeck.RemoveAt(randCardIndex);
-        
-        SoundFxManager.Instance.AudioManager(DrawCardAudioClip, transform,1f);
 
+        if(isSingle){
+
+        SoundFxManager.Instance.AudioManager(DrawCardSingleAudioClip, transform, 1f);
+        }
+
+    }
+    public void DrawFirstHand(){
+        StartCoroutine(FirstHand());
+    }
+    IEnumerator FirstHand()
+    {
+        SoundFxManager.Instance.AudioManager(DrawCardMultipleAudioClip, transform, 1f);
+
+        for (int i = 0; i < StartingCards; i++)
+        {
+            DrawCard(PlayerHand.transform.GetChild(i).transform,false);
+            yield return new WaitForSeconds(0.2f);
+        }
+        print("stop");
+        SoundFxManager.Instance.StopMusicFx();
     }
 }
