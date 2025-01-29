@@ -21,7 +21,7 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     }
     private void Start()
     {
-        DrawFirstHand();
+        // DrawFirstHand();
     }
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -64,18 +64,18 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
 
     }
     public void DrawFirstHand(){
-        StartCoroutine(FirstHand());
+        StartCoroutine(FirstHand(1f));
     }
-    IEnumerator FirstHand()
+    public IEnumerator FirstHand(float time)
     {
-        SoundFxManager.Instance.AudioManager(DrawCardMultipleAudioClip, transform, 1f);
+        SoundFxManager.Instance.AudioManagerFixedTime(DrawCardMultipleAudioClip, transform, 1f,time);
 
         for (int i = 0; i < StartingCards; i++)
         {
             DrawCard(PlayerHand.transform.GetChild(i).transform,false);
             yield return new WaitForSeconds(0.2f);
         }
-        print("stop");
-        SoundFxManager.Instance.StopMusicFx();
+        // print("stop");
+        // SoundFxManager.Instance.StopMusicFx();
     }
 }

@@ -3,12 +3,15 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class EnemyUnit : MonoBehaviour, IPointerClickHandler
+public class EnemyUnit : MonoBehaviour
 {
     [SerializeField] EnemySlot enemySlot;
     public int Barrier;
     public int BarrierThreshold;
     [SerializeField] TMP_Text BarrierText;
+    [SerializeField] public List<BaseCard> EnemyDeck;
+    [SerializeField] GameObject BlankCard;
+    [SerializeField] AnimationClip SpawnAnim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,8 +29,16 @@ public class EnemyUnit : MonoBehaviour, IPointerClickHandler
         Barrier = barrier;
         BarrierText.text = barrier.ToString();
     }
-    public void OnPointerClick(PointerEventData eventData)
+    public void EnemyPlaceCardOne(Transform Slot)
     {
+        GameObject newCard = Instantiate(BlankCard, Slot);
+        int randCardIndex = UnityEngine.Random.Range(0, EnemyDeck.Count);
+        newCard.GetComponent<Card>().CardSO = EnemyDeck[randCardIndex];
+        newCard.GetComponent<Card>().runSpawnAnim = true;
+        newCard.GetComponent<Card>().SpawnAnim = SpawnAnim;
+        newCard.GetComponent<drag>().enabled=false;
+
+        EnemyDeck.RemoveAt(randCardIndex);
 
     }
 }

@@ -33,6 +33,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public bool runSpawnAnim;
     public AnimationClip SpawnAnim;
     [SerializeField] AnimationClip animationClip;
+    [SerializeField] GameObject Border;
     // public UnityEvent unityEvent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -45,7 +46,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
         CardHealth = CardSO.CardHealth;
         CardSprite = CardSO.CardSprite;
         targetSelf = CardSO.selfTargeting;
-        target=null;
+        target = null;
         animator = GetComponentInChildren<Animator>();
 
         animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
@@ -56,20 +57,34 @@ public class Card : MonoBehaviour, IPointerClickHandler
         // cardName = GetComponentInChildren<TMP_Text>();
         // cardName.text = cardScriptableObject.CardName;
         updateCardVisual();
-        if(runSpawnAnim){
+        if (runSpawnAnim)
+        {
             PlayAnim(SpawnAnim);
         }
         // print(ScriptableObject.CreateInstance(cardScriptableObject.GetType()));
     }
+    private void OnDestroy()
+    {
+        if (target != null)
+        {
 
+            target.setBorder(false);
+        }
+    }
     // Update is called once per frame
     void Update()
     {
-        if(target!=null){
+        if (target != null)
+        {
             // add -1 to the z axis
-            lineRenderer.SetPosition(0,new Vector3(transform.position.x,transform.position.y,0));
-            lineRenderer.SetPosition(1,new Vector3(target.transform.position.x,target.transform.position.y,0));
+            lineRenderer.SetPosition(0, new Vector3(transform.position.x, transform.position.y, 0));
+            lineRenderer.SetPosition(1, new Vector3(target.transform.position.x, target.transform.position.y, 0));
             // Debug.DrawLine(transform.position, target.transform.position);
+        }
+        else
+        {
+            lineRenderer.SetPosition(0, Vector3.zero);
+            lineRenderer.SetPosition(1, Vector3.zero);
         }
         if (isActive)
         {
@@ -85,13 +100,14 @@ public class Card : MonoBehaviour, IPointerClickHandler
         }
     }
 
-public void Action(){
-   CardSO.Action(this,target); 
-   
-}
-// public void Attack(int damage){
-//     target.CardHealth-=damage;
-// }
+    public void Action()
+    {
+        CardSO.Action(this, target);
+
+    }
+    // public void Attack(int damage){
+    //     target.CardHealth-=damage;
+    // }
     // public void Action(List<Card> target, List<Card> user, int userIndex, int targetIndex)
     // {
     //     // print("Doing Attack");
@@ -117,7 +133,7 @@ public void Action(){
         cardNameVisual.text = CardName.ToString();
         cardAttackVisual.text = CardAttack.ToString();
         cardHealthVisual.text = CardHealth.ToString();
-        cardImg.sprite=CardSprite;
+        cardImg.sprite = CardSprite;
         // cardImg=CardSprite;
     }
     public void OnPointerClick(PointerEventData eventData)
@@ -127,12 +143,17 @@ public void Action(){
             CardSelected?.Invoke(this);
             // animatorOverrideController
         }
-            // PlayAnim(animationClip);
+        // PlayAnim(animationClip);
         // print("Click Invoked");
     }
-    public void PlayAnim(AnimationClip animationClip){
+    public void PlayAnim(AnimationClip animationClip)
+    {
 
-            animatorOverrideController["BaseAttackAnim"]=animationClip;
-            animator.SetTrigger("Attack");
+        animatorOverrideController["BaseAttackAnim"] = animationClip;
+        animator.SetTrigger("Attack");
+    }
+    public void setBorder(bool setBorder)
+    {
+        Border.SetActive(setBorder);
     }
 }
