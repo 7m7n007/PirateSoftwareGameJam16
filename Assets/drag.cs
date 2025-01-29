@@ -8,7 +8,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     [SerializeField] private Canvas canvas;
     [SerializeField] private AudioClip ClickAudioClip;
     [SerializeField] private AudioClip PickAudioClip;
-    // [SerializeField] private AnimationClip ShakeAnim;
+    [SerializeField] private AnimationClip ShakeAnim;
 
     // private RectTransform rectTransform;
     private CanvasGroup canvasGroup;
@@ -22,7 +22,7 @@ public class drag : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHand
     public void OnPointerClick(PointerEventData eventData)
     {
         // SoundFxManager.Instance.AudioManager(ClickAudioClip, transform, 1f);
-        // GetComponent<Card>().PlayAnim(ShakeAnim);
+        GetComponent<Card>().PlayAnim(ShakeAnim);
     }
     public void OnBeginDrag(PointerEventData eventdata)
     {
