@@ -26,6 +26,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     [SerializeField] Image cardImg;
     [SerializeField] LineRenderer lineRenderer;
     public bool isActive;
+    public bool isSelectable;
     public bool targetSelf;
     public Card target;
     private Animator animator;
@@ -94,15 +95,24 @@ public class Card : MonoBehaviour, IPointerClickHandler
         {
             diableImg.SetActive(true);
         }
+        if(isSelectable){
+            Border.GetComponent<RawImage>().color=Color.green;
+            Border.SetActive(true);
+        }
+        else{
+            
+            Border.GetComponent<RawImage>().color=Color.red;
+            Border.SetActive(false);
+        }
         if (CardHealth <= 0)
         {
             Destroy(gameObject);
         }
     }
 
-    public void Action()
+    public void Action(List<GameObject> targetSlots)
     {
-        CardSO.Action(this, target);
+        CardSO.Action(this, target, targetSlots);
 
     }
     // public void Attack(int damage){
@@ -149,7 +159,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public void PlayAnim(AnimationClip animationClip)
     {
 
-        animatorOverrideController["BaseAttackAnim"] = animationClip;
+        animatorOverrideController["BasicAttackAnim"] = animationClip;
         animator.SetTrigger("Attack");
     }
     public void setBorder(bool setBorder)

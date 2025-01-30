@@ -11,7 +11,7 @@ public abstract class BaseCard:ScriptableObject
     public Sprite CardSprite;
     
     public bool selfTargeting;
-    public abstract void Action(Card user,Card target);
+    public abstract void Action(Card user,Card target,List<GameObject> targetSlots);
     public virtual void Attack(int damage){
         
     }

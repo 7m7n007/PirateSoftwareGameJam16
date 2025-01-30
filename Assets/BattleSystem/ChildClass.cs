@@ -14,39 +14,29 @@ public class ChildCard : BaseCard
     [SerializeField] public AnimationClip TargetHitClip;
     [SerializeField] public AudioClip AttackingSFX;
 
-    // [SerializeField] public List<int> AttackPattern;
-    // [SerializeField] public List<int> PositionPattern;
-    // public override void Action(List<Card> target, List<Card> user, int userIndex,int targetIndex)
-    // {
-    //     Attack(Damage,Position,target,user,userIndex,targetIndex);
-    //     // throw new System.NotImplementedException();
-    // }
-    // public void Attack(List<int> damage, List<int> Position, List<Card> target, List<Card> user, int userIndex,int targetIndex)
-    // {
-    //     for (int i = 0; i < damage.Count; i++)
-    //     {
-    //         try{
-
-    //         target[targetIndex + Position[i]].CardHealth -= damage[i];
-    //         target[targetIndex + Position[i]].updateCardVisual();
-    //         Debug.DrawLine(user[userIndex].transform.position, target[targetIndex + Position[i]].transform.position, new Color(UnityEngine.Random.Range(0, 255) / 255, UnityEngine.Random.Range(0, 255) / 255, UnityEngine.Random.Range(0, 255) / 255, 1), 1f);
-    //         }
-    //         catch (IndexOutOfRangeException){
-    //             Debug.Log("OutOfRange");
-    //         }
-
-    //         // target.IndexOf(this);
-    //     }
-    //     // ActionDone.Invoke();
-
-    // }
-    public override void Action(Card user,Card target)
+    public override void Action(Card user,Card target,List<GameObject> targetSlots)
     {
-        Attack(target, Damage[0]);
+        int targetIndex = FindCardinSlot(target, targetSlots);
+        Debug.Log(targetIndex);
+        for (int i = 0; i < Position.Count; i++)
+        {
+            if (targetIndex + Position[i] < targetSlots.Count && targetIndex+Position[i]>=0)
+            {
+
+                Card temp = GetCardinSlot(targetIndex + Position[i], targetSlots);
+                if (temp != null)
+                {
+
+                    Attack(temp, Damage[i]);
+                    temp.PlayAnim(TargetHitClip);
+                }
+            }
+        }
+        // Attack(target, Damage[0]);
         
         SoundFxManager.Instance.AudioManager(AttackingSFX,GameObject.FindWithTag("Canvas").transform, 1f);
         user.PlayAnim(AttackingClip);
-        target.PlayAnim(TargetHitClip);
+        // target.PlayAnim(TargetHitClip);
         
         // throw new System.NotImplementedException();
     }
@@ -58,6 +48,31 @@ public class ChildCard : BaseCard
             target.CardHealth -= Damage;
             target.updateCardVisual();
             // target=null;
+        }
+    }
+    private int FindCardinSlot(Card card, List<GameObject> slots)
+    {
+        for (int i = 0; i < slots.Count; i++)
+        {
+            if (slots[i].transform.childCount > 0)
+            {
+                if (slots[i].transform.GetChild(0).GetComponent<Card>() == card)
+                {
+                    return i;
+                }
+            }
+        }
+        return -1;
+    }
+    private Card GetCardinSlot(int index, List<GameObject> slots)
+    {
+        if (slots[index].transform.childCount > 0)
+        {
+            return slots[index].transform.GetChild(0).GetComponent<Card>();
+        }
+        else
+        {
+            return null;
         }
     }
 }

@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
+    // --------------------Decleration--------------------
     public List<GameObject> PlayerSlots;
     public List<GameObject> EnemySlots;
     public GameObject PlayerUnit;
@@ -22,8 +23,11 @@ public class BattleManager : MonoBehaviour
     [SerializeField] DeckScript Deck;
     [SerializeField] bool isReady;
     [SerializeField] bool gameRunning;
-    // Functions
+
     [SerializeField] AudioClip SelectAudioClip;
+
+
+    // -------------------Functions-----------------------
     private void OnEnable()
     {
         Card.CardSelected += SelectCard;
@@ -38,12 +42,13 @@ public class BattleManager : MonoBehaviour
         {
             StopAllCoroutines();
             GameFinish();
-            gameRunning=true;
+            gameRunning = true;
 
             // SceneController.instance.LoadScene("DeckMenu");
         }
     }
-    public void GameFinish(){
+    public void GameFinish()
+    {
         WinScreen.SetActive(true);
     }
     public void startBattle()
@@ -52,17 +57,16 @@ public class BattleManager : MonoBehaviour
     }
     public IEnumerator RewampedBattle()
     {
-        // while (gameRunning)
-        // {
+        // -------StartingLevel--------
         // SetUp Stage
         // Player Draw Cards
         yield return StartCoroutine(Deck.FirstHand(1f));
         // Enemy Places Card
         yield return StartCoroutine(EnemyPlacesCard());
 
+        // ---------Round Loop--------
         while (gameRunning)
         {
-            // print("gamerunning");
             // // Player Places Cards
             yield return StartCoroutine(PlacingCards());
 
@@ -71,8 +75,10 @@ public class BattleManager : MonoBehaviour
             yield return NextRound();
         }
     }
+
     public IEnumerator NextRound()
     {
+        changePhaseImg.changePhase(changePhaseImg.BattlePhases.SetUpPhase);
         Deck.DrawOneCard();
         yield return StartCoroutine(EnemyPlacesCard());
     }
@@ -112,16 +118,19 @@ public class BattleManager : MonoBehaviour
 
         // Enemy DEcides Attack
         yield return StartCoroutine(EnemyAi(EnemyCards, PlayerCards));
+        changePhaseImg.changePhase(changePhaseImg.BattlePhases.PlayerAttack);
 
-        changePhaseImg.NextPhase();
         // Player Attacks One by One
         yield return StartCoroutine(Action2(PlayerCards, EnemyCards));
 
-        changePhaseImg.NextPhase();
+        changePhaseImg.changePhase(changePhaseImg.BattlePhases.EnemyAttack);
         print("Enemies Turn");
         yield return new WaitForSeconds(2f);
 
 
+        ActivateCards(PlayerCards);
+        ActivateCards(EnemyCards);
+        
         EnemyCards = new List<Card>();
         foreach (GameObject card in EnemySlots)
         {
@@ -170,10 +179,19 @@ public class BattleManager : MonoBehaviour
         {
             if (EnemyCards[i].target != null)
             {
+                if (EnemyCards[i].targetSelf)
+                {
 
-                EnemyCards[i].Action();
-                EnemyCards[i].target.setBorder(false);
-                EnemyCards[i].target = null;
+                    EnemyCards[i].Action(EnemySlots);
+                    EnemyCards[i].target.setBorder(false);
+                    EnemyCards[i].target = null;
+                }
+                else{
+                    EnemyCards[i].Action(EnemySlots);
+                    EnemyCards[i].target.setBorder(false);
+                    EnemyCards[i].target = null;
+
+                }
                 yield return new WaitForSeconds(1f);
             }
         }
@@ -267,7 +285,7 @@ public class BattleManager : MonoBehaviour
         Card AttackingCard = null;
         // int TargetCard = -1;
         AttackStages attackStages = AttackStages.SelectCard;
-        int cardleft = 5;
+        int cardleft = newPlayerCards.Count;
 
         // List<Card> availableCards=newPlayerCards;
 
@@ -321,13 +339,12 @@ public class BattleManager : MonoBehaviour
 
                 }
             }
-
             while (attackStages == AttackStages.Attack)
             {
                 if (AttackingCard.targetSelf == false)
                 {
 
-                    AttackingCard.Action();
+                    AttackingCard.Action(EnemySlots);
                     AttackingCard.target = null;
                     AttackingCard.isActive = false;
                     newPlayerCards.Remove(AttackingCard);
@@ -338,7 +355,7 @@ public class BattleManager : MonoBehaviour
                 }
                 else
                 {
-                    AttackingCard.Action();
+                    AttackingCard.Action(PlayerSlots);
                     AttackingCard.target = null;
                     AttackingCard.isActive = false;
                     newPlayerCards.Remove(AttackingCard);
@@ -351,6 +368,7 @@ public class BattleManager : MonoBehaviour
         }
         AttackingCard.target = null;
         battleStages += 1;
+
     }
 
     public void SelectCard(Card card)

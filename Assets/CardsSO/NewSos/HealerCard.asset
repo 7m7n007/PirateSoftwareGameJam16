@@ -9,15 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: UniteReparr
+  m_Script: {fileID: 11500000, guid: f050aeccde141664698e375a531646ec, type: 3}
+  m_Name: HealerCard
   m_EditorClassIdentifier: 
-  CardName: unit repair
+  CardName: RepairBuddy
   CardHealth: 5
-  CardSprite: {fileID: 1553030961511896296, guid: 08c6b7e6d98f0ac4eb7d7d2abcdbd331, type: 3}
+  CardSprite: {fileID: 722032925807146783, guid: 08c6b7e6d98f0ac4eb7d7d2abcdbd331, type: 3}
   selfTargeting: 1
-  Damage: 00000000
-  Position: 00000000
+  Heals: 020000000200000002000000
+  Position: ffffffff0000000001000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 272956e3635deee4eb437b7d9614c18d, type: 2}
-  AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
+  HealingSFX: {fileID: 8300000, guid: c783fc61630a6094f9a88b325d2cf663, type: 3}
