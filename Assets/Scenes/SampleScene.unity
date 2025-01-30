@@ -2232,6 +2232,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transition: {fileID: 0}
+  TransitionSound: {fileID: 8300000, guid: 64f429cd853bd3d46ab2b9d34bd18a78, type: 3}
+  SoundManager: {fileID: 1093456114}
 --- !u!4 &450265666
 Transform:
   m_ObjectHideFlags: 0
@@ -4348,7 +4350,7 @@ GameObject:
   - component: {fileID: 1093456114}
   m_Layer: 0
   m_Name: SounderMixerManager
-  m_TagString: Untagged
+  m_TagString: MixerManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4865,9 +4867,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -2602885379685253809, guid: 2f0eb18a0f5e8eb418a1a619fad3b204, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 9c224f26b5f657542ac09a0acb293879, type: 3}
-  m_Resource: {fileID: 8300000, guid: 9c224f26b5f657542ac09a0acb293879, type: 3}
-  m_PlayOnAwake: 0
+  m_audioClip: {fileID: 8300000, guid: 64f429cd853bd3d46ab2b9d34bd18a78, type: 3}
+  m_Resource: {fileID: 8300000, guid: 64f429cd853bd3d46ab2b9d34bd18a78, type: 3}
+  m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
