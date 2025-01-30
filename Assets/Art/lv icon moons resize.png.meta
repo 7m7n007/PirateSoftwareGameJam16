@@ -138,86 +138,20 @@ TextureImporter:
       name: lv icon moons resize_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 175
-        width: 42
-        height: 42
+        x: 0
+        y: 0
+        width: 204
+        height: 252
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9a9d5f16ac9d4ace0800000000000000
-      internalID: -1394750521327887959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon moons resize_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 75
-        width: 122
-        height: 122
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 65eadd74d8c85b040800000000000000
-      internalID: 4662787527636004438
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon moons resize_2
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 179
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e9012409cc2a7ce40800000000000000
-      internalID: 5676684854801076382
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon moons resize_3
-      rect:
-        serializedVersion: 2
-        x: 95
-        y: 7
-        width: 66
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9986b2db22916c30800000000000000
-      internalID: 4350919431933036959
+      spriteID: 9620cecc7d5815e489dae13461dc56f5
+      internalID: 851937164
       vertices: []
       indices: 
       edges: []
@@ -226,7 +160,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2b0eb79a5b56ebd41a077d4dc9952915
     internalID: 0
     vertices: []
     indices: 
@@ -235,7 +169,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lv icon moons resize_0: 851937164
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      gamejam_pack2_0: -3132731709898183241
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
