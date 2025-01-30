@@ -50,6 +50,7 @@ public class ChildCard : BaseCard
         
         // throw new System.NotImplementedException();
     }
+    
     public void Attack(Card target, int Damage)
     {
         if (target != null)

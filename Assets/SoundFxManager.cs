@@ -26,6 +26,19 @@ public class SoundFxManager : MonoBehaviour
 
 
     }
+    public void AudioManagerFixedTime(AudioClip audioClip , Transform spawnTransform , float volume,float time)
+    {
+       AudioSource audioSource = Instantiate(SoundFXSource, spawnTransform.position, Quaternion.identity);
+        
+       audioSource.clip = audioClip;
+       audioSource.volume = volume;
+       audioSource.Play();
+
+       float audioLength = audioSource.clip.length;
+       Destroy(audioSource.gameObject, time);
+
+
+    }
 
     public void RandomAudioManager(AudioClip[] audioClip , Transform spawnTransform , float volume)
     {

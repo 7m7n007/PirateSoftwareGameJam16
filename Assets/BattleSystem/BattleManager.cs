@@ -16,10 +16,12 @@ public class BattleManager : MonoBehaviour
     public Card LastSelectedCard;
     public BattleStages battleStages;
     [SerializeField] changePhaseImg changePhaseImg;
-    
 
+    [SerializeField] DeckScript Deck;
+    [SerializeField] bool isReady;
+    [SerializeField] bool gameRunning;
     // Functions
-
+    [SerializeField] AudioClip SelectAudioClip;
     private void OnEnable()
     {
         Card.CardSelected += SelectCard;
@@ -28,71 +30,201 @@ public class BattleManager : MonoBehaviour
     {
         Card.CardSelected -= SelectCard;
     }
-    public void BasicBattle()
+
+    public void startBattle()
     {
-        changePhaseImg.NextPhase();
-        // Getting Player Cards
+        Coroutine c = StartCoroutine(RewampedBattle());
+
+    }
+    public IEnumerator RewampedBattle()
+    {
+        // while (gameRunning)
+        // {
+        // SetUp Stage
+        // Player Draw Cards
+        yield return StartCoroutine(Deck.FirstHand(1f));
+        // Enemy Places Card
+        yield return StartCoroutine(EnemyPlacesCard());
+        // Player Places Cards
+        yield return StartCoroutine(PlacingCards());
+        // Round 1 
+
+
+
         List<Card> PlayerCards = new List<Card>();
         foreach (GameObject card in PlayerSlots)
         {
-            PlayerCards.Add(card.GetComponentInChildren<Card>());
+            if (card.GetComponentInChildren<Card>() != null)
+            {
+                PlayerCards.Add(card.GetComponentInChildren<Card>());
+            }
         }
 
         // Getting Enemy Cards
         List<Card> EnemyCards = new List<Card>();
         foreach (GameObject card in EnemySlots)
         {
-            EnemyCards.Add(card.GetComponentInChildren<Card>());
+            if (card.GetComponentInChildren<Card>() != null)
+            {
+                EnemyCards.Add(card.GetComponentInChildren<Card>());
+            }
         }
 
-        
-        for (int i = 0; i < PlayerCards.Count; i++)
+        // Disable Drag of Cards
+        foreach (Card card in PlayerCards)
         {
-            DeActivateCards(PlayerCards);
+            card.GetComponent<drag>().enabled = false;
         }
+        foreach (Card card in EnemyCards)
+        {
+            card.GetComponent<drag>().enabled = false;
+        }
+
+
+        // Enemy DEcides Attack
+        yield return StartCoroutine(EnemyAi(EnemyCards, PlayerCards));
+
+        changePhaseImg.NextPhase();
+        // Player Attacks One by One
+        yield return StartCoroutine(Action2(PlayerCards, EnemyCards));
+
+        changePhaseImg.NextPhase();
+        print("Enemies Turn");
+        yield return new WaitForSeconds(2f);
+        
+        
+        EnemyCards = new List<Card>();
+        foreach (GameObject card in EnemySlots)
+        {
+            if (card.GetComponentInChildren<Card>() != null)
+            {
+                EnemyCards.Add(card.GetComponentInChildren<Card>());
+            }
+        }
+        
+        // Enemy attack
+        yield return StartCoroutine(EnemyAttack(EnemyCards, PlayerCards));
+        PlayerReady(false);
+        // Restart
+
+
+        // Disable Drag of Cards
+        foreach (Card card in PlayerCards)
+        {
+            card.GetComponent<drag>().enabled = true;
+        }
+        // foreach (Card card in EnemyCards)
+        // {
+        //     card.GetComponent<drag>().enabled = true;
+        // }
+        // yield return null;
+
+
+        // }
+    }
+
+    public void PlayerReady(bool Ready)
+    {
+        isReady = Ready;
+    }
+    IEnumerator PlacingCards()
+    {
+        while (!isReady)
+        {
+            yield return null;
+        }
+
+    }
+    IEnumerator EnemyAttack(List<Card> EnemyCards, List<Card> PlayerCards)
+    {
         for (int i = 0; i < EnemyCards.Count; i++)
         {
-            DeActivateCards(EnemyCards);
-
-        }
-        PlayerUnit.GetComponentInChildren<Card>().isActive = false;
-        EnemyUnit.GetComponentInChildren<Card>().isActive = false;
-        List<Card> targets = new List<Card>();
-        
-        if (battleStages == BattleStages.EnemyDecides)
-        {
-
-            targets = EnemyAi(EnemyCards, PlayerCards);
-            for (int i = 0; i < targets.Count; i++)
-            {
-                Debug.DrawLine(EnemyCards[i].transform.position, targets[i].transform.position, Color.white, 100f);
-            }
-            battleStages = BattleStages.PlayerTurn;
-        }
-
-        else if (battleStages == BattleStages.PlayerTurn)
-        {
-            
-            Coroutine ActionCoroutine = StartCoroutine(Action2(PlayerCards, EnemyCards));
-        }
-        else if (battleStages == BattleStages.EnemyTurn)
-        {
-            for (int i = 0; i < EnemyCards.Count; i++)
+            if (EnemyCards[i].target != null)
             {
 
                 EnemyCards[i].Action();
+                EnemyCards[i].target.setBorder(false);
                 EnemyCards[i].target = null;
+                yield return new WaitForSeconds(1f);
             }
-
         }
-        // print("PlayerAttack DOne");
-        // First Player Card Executes
-        // First Enemy Card Executes
-        // Second Player Card Executes
-        // Second Enemy Card Executes
-
 
     }
+    IEnumerator EnemyPlacesCard()
+    {
+        foreach (GameObject Slot in EnemySlots)
+        {
+            EnemyUnit.GetComponent<EnemyUnit>().EnemyPlaceCardOne(Slot.transform);
+            yield return new WaitForSeconds(0.2f);
+        }
+        // print("EnemyCardPlaced");
+
+    }
+    // public void BasicBattle()
+    // {
+    //     changePhaseImg.NextPhase();
+    //     // Getting Player Cards
+    //     List<Card> PlayerCards = new List<Card>();
+    //     foreach (GameObject card in PlayerSlots)
+    //     {
+    //         PlayerCards.Add(card.GetComponentInChildren<Card>());
+    //     }
+
+    //     // Getting Enemy Cards
+    //     List<Card> EnemyCards = new List<Card>();
+    //     foreach (GameObject card in EnemySlots)
+    //     {
+    //         EnemyCards.Add(card.GetComponentInChildren<Card>());
+    //     }
+
+
+    //     for (int i = 0; i < PlayerCards.Count; i++)
+    //     {
+    //         DeActivateCards(PlayerCards);
+    //     }
+    //     for (int i = 0; i < EnemyCards.Count; i++)
+    //     {
+    //         DeActivateCards(EnemyCards);
+
+    //     }
+    //     PlayerUnit.GetComponentInChildren<Card>().isActive = false;
+    //     EnemyUnit.GetComponentInChildren<Card>().isActive = false;
+    //     List<Card> targets = new List<Card>();
+
+    //     if (battleStages == BattleStages.EnemyDecides)
+    //     {
+
+    //         targets = EnemyAi(EnemyCards, PlayerCards);
+    //         for (int i = 0; i < targets.Count; i++)
+    //         {
+    //             Debug.DrawLine(EnemyCards[i].transform.position, targets[i].transform.position, Color.white, 100f);
+    //         }
+    //         battleStages = BattleStages.PlayerTurn;
+    //     }
+
+    //     else if (battleStages == BattleStages.PlayerTurn)
+    //     {
+
+    //         Coroutine ActionCoroutine = StartCoroutine(Action2(PlayerCards, EnemyCards));
+    //     }
+    //     else if (battleStages == BattleStages.EnemyTurn)
+    //     {
+    //         for (int i = 0; i < EnemyCards.Count; i++)
+    //         {
+
+    //             EnemyCards[i].Action();
+    //             EnemyCards[i].target = null;
+    //         }
+
+    //     }
+    //     // print("PlayerAttack DOne");
+    //     // First Player Card Executes
+    //     // First Enemy Card Executes
+    //     // Second Player Card Executes
+    //     // Second Enemy Card Executes
+
+
+    // }
     IEnumerator Action2(List<Card> PlayerCards, List<Card> EnemyCards)
     {
         List<Card> newPlayerCards = PlayerCards;
@@ -103,6 +235,8 @@ public class BattleManager : MonoBehaviour
         // int TargetCard = -1;
         AttackStages attackStages = AttackStages.SelectCard;
         int cardleft = 5;
+
+        // List<Card> availableCards=newPlayerCards;
 
         while (cardleft > 0)
         {
@@ -161,6 +295,10 @@ public class BattleManager : MonoBehaviour
                 {
 
                     AttackingCard.Action();
+                    AttackingCard.target = null;
+                    AttackingCard.isActive = false;
+                    newPlayerCards.Remove(AttackingCard);
+                    // DeActivateCards(new List<Card>{AttackingCard});
                     attackStages = AttackStages.SelectCard;
                     cardleft -= 1;
 
@@ -168,6 +306,10 @@ public class BattleManager : MonoBehaviour
                 else
                 {
                     AttackingCard.Action();
+                    AttackingCard.target = null;
+                    AttackingCard.isActive = false;
+                    newPlayerCards.Remove(AttackingCard);
+                    // DeActivateCards(new List<Card>{AttackingCard});
                     attackStages = AttackStages.SelectCard;
                     cardleft -= 1;
 
@@ -217,33 +359,37 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
-    public List<Card> EnemyAi(List<Card> EnemyCards, List<Card> PlayerCards)
+    public IEnumerator EnemyAi(List<Card> EnemyCards, List<Card> PlayerCards)
     {
-        List<Card> playerCardNotNull=PlayerCards;
-        playerCardNotNull.RemoveAll(x=>!x);
+        List<Card> playerCardNotNull = PlayerCards;
+        playerCardNotNull.RemoveAll(x => !x);
 
-        List<Card> enemyCardNotNull=EnemyCards;
-        enemyCardNotNull.RemoveAll(x=>!x);
+        List<Card> enemyCardNotNull = EnemyCards;
+        enemyCardNotNull.RemoveAll(x => !x);
 
         List<Card> targets = new List<Card>();
         foreach (Card enemy in EnemyCards)
         {
             if (enemy != null)
             {
-                
+
                 if (enemy.targetSelf == false)
                 {
-                    
+
                     enemy.target = PlayerCards[UnityEngine.Random.Range(0, playerCardNotNull.Count)];
+
                 }
                 else
                 {
                     enemy.target = EnemyCards[UnityEngine.Random.Range(0, enemyCardNotNull.Count)];
 
                 }
+                enemy.target.setBorder(true);
+                SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip,transform,1f,0.3f);
+                yield return new WaitForSeconds(0.3f);
             }
         }
-        return targets;
+        // return targets;
     }
 
 }
@@ -256,7 +402,9 @@ public enum AttackStages
 }
 public enum BattleStages
 {
+    PlayerDrawCards,
+    EnemyPlacesCards,
     EnemyDecides,
-    PlayerTurn,
-    EnemyTurn
+    PlayerAttacks,
+    EnemyAttacks
 }
