@@ -19,6 +19,7 @@ public class BattleManager : MonoBehaviour
     public BattleStages battleStages;
     [SerializeField] changePhaseImg changePhaseImg;
     [SerializeField] GameObject WinScreen;
+    [SerializeField] GameObject LoseScreen;
 
     [SerializeField] DeckScript Deck;
     [SerializeField] bool isReady;
@@ -31,25 +32,33 @@ public class BattleManager : MonoBehaviour
     private void OnEnable()
     {
         Card.CardSelected += SelectCard;
+        Card.CardDestroyed += GameFinish;
     }
     private void OnDisable()
     {
         Card.CardSelected -= SelectCard;
+        Card.CardDestroyed -= GameFinish;
     }
     private void Update()
     {
         if (!gameRunning)
         {
             StopAllCoroutines();
-            GameFinish();
+            GameFinish(true);
             gameRunning = true;
-
             // SceneController.instance.LoadScene("DeckMenu");
         }
     }
-    public void GameFinish()
+    public void GameFinish(bool isPlayerEnemy)
     {
-        WinScreen.SetActive(true);
+            StopAllCoroutines();
+        if(isPlayerEnemy){
+         
+            WinScreen.SetActive(true);
+        }
+        else{
+            LoseScreen.SetActive(true);
+        }
     }
     public void startBattle()
     {
@@ -130,7 +139,7 @@ public class BattleManager : MonoBehaviour
 
         ActivateCards(PlayerCards);
         ActivateCards(EnemyCards);
-        
+
         EnemyCards = new List<Card>();
         foreach (GameObject card in EnemySlots)
         {
@@ -186,8 +195,9 @@ public class BattleManager : MonoBehaviour
                     EnemyCards[i].target.setBorder(false);
                     EnemyCards[i].target = null;
                 }
-                else{
-                    EnemyCards[i].Action(EnemySlots);
+                else
+                {
+                    EnemyCards[i].Action(PlayerSlots);
                     EnemyCards[i].target.setBorder(false);
                     EnemyCards[i].target = null;
 
@@ -203,9 +213,12 @@ public class BattleManager : MonoBehaviour
         {
             if (Slot.transform.childCount <= 0)
             {
+                if (EnemyUnit.GetComponent<EnemyUnit>().EnemyDeck.Count > 0)
+                {
 
-                EnemyUnit.GetComponent<EnemyUnit>().EnemyPlaceCardOne(Slot.transform);
-                yield return new WaitForSeconds(0.2f);
+                    EnemyUnit.GetComponent<EnemyUnit>().EnemyPlaceCardOne(Slot.transform);
+                    yield return new WaitForSeconds(0.2f);
+                }
             }
         }
         // print("EnemyCardPlaced");
@@ -278,19 +291,19 @@ public class BattleManager : MonoBehaviour
     // }
     IEnumerator Action2(List<Card> PlayerCards, List<Card> EnemyCards)
     {
-        List<Card> newPlayerCards = PlayerCards;
-
-        List<Card> newEnemyCards = EnemyCards;
 
         Card AttackingCard = null;
         // int TargetCard = -1;
         AttackStages attackStages = AttackStages.SelectCard;
-        int cardleft = newPlayerCards.Count;
+        int cardleft = PlayerCards.Count;
 
         // List<Card> availableCards=newPlayerCards;
 
         while (cardleft > 0)
         {
+            List<Card> newPlayerCards = PlayerCards;
+
+            List<Card> newEnemyCards = EnemyCards;
 
             while (attackStages == AttackStages.SelectCard)
             {
@@ -417,6 +430,10 @@ public class BattleManager : MonoBehaviour
 
         List<Card> enemyCardNotNull = EnemyCards;
         enemyCardNotNull.RemoveAll(x => !x);
+
+        if(PlayerUnit.GetComponent<PlayerUnit>().Barrier<PlayerUnit.GetComponent<PlayerUnit>().BarrierThreshold){
+            playerCardNotNull.Add(PlayerUnit.GetComponentInChildren<Card>());
+        }
 
         List<Card> targets = new List<Card>();
         foreach (Card enemy in EnemyCards)

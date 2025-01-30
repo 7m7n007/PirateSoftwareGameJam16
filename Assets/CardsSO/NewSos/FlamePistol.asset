@@ -15,6 +15,7 @@ MonoBehaviour:
   CardName: Flame Pistol
   CardHealth: 3
   CardSprite: {fileID: 5302764480030749623, guid: bf1722034ddcc964b91e8769f260c454, type: 3}
+  CardDescription: Does Splash Damage Equal to CP
   selfTargeting: 0
   Damage: 020000000300000002000000
   Position: ffffffff0000000001000000

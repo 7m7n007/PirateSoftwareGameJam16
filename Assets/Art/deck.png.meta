@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: cedc1f2f266f87a44940584b36657a2c
+guid: 8eb5c94db53bec247b44c28b9f8a97ca
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4549938786161101303
-    second: lv icon asteroid field resize_0
-  - first:
-      213: 48311248834397959
-    second: lv icon asteroid field resize_1
-  - first:
-      213: -7879860642690067974
-    second: lv icon asteroid field resize_2
-  - first:
-      213: 7107114897835923446
-    second: lv icon asteroid field resize_3
+      213: -5481250483381502841
+    second: deck_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -55,7 +46,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -84,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -135,13 +126,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: lv icon asteroid field resize_0
+      name: deck_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 87
-        width: 70
-        height: 62
+        x: 39
+        y: 41
+        width: 109
+        height: 127
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,74 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9067815d7ce5bd0c0800000000000000
-      internalID: -4549938786161101303
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon asteroid field resize_1
-      rect:
-        serializedVersion: 2
-        x: 79
-        y: 71
-        width: 78
-        height: 66
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7070e6923d2aba000800000000000000
-      internalID: 48311248834397959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon asteroid field resize_2
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 39
-        width: 46
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af190e8ae7c15a290800000000000000
-      internalID: -7879860642690067974
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: lv icon asteroid field resize_3
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 7
-        width: 66
-        height: 58
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6f7956f285b81a260800000000000000
-      internalID: 7107114897835923446
+      spriteID: 78c7b1de9bfaee3b0800000000000000
+      internalID: -5481250483381502841
       vertices: []
       indices: 
       edges: []
@@ -226,7 +151,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -236,10 +161,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      lv icon asteroid field resize_0: -4549938786161101303
-      lv icon asteroid field resize_1: 48311248834397959
-      lv icon asteroid field resize_2: -7879860642690067974
-      lv icon asteroid field resize_3: 7107114897835923446
+      deck_0: -5481250483381502841
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

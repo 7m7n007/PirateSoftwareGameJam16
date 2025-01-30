@@ -14,33 +14,42 @@ public class ChildCard : BaseCard
     [SerializeField] public AnimationClip TargetHitClip;
     [SerializeField] public AudioClip AttackingSFX;
 
-    public override void Action(Card user,Card target,List<GameObject> targetSlots)
+    public override void Action(Card user, Card target, List<GameObject> targetSlots)
     {
-        int targetIndex = FindCardinSlot(target, targetSlots);
-        Debug.Log(targetIndex);
-        for (int i = 0; i < Position.Count; i++)
+        if (target.isUnit)
         {
-            if (targetIndex + Position[i] < targetSlots.Count && targetIndex+Position[i]>=0)
-            {
+            Attack(target, Damage[Damage.Count/2]);
+            target.PlayAnim(TargetHitClip);
+        }
+        else
+        {
 
-                Card temp = GetCardinSlot(targetIndex + Position[i], targetSlots);
-                if (temp != null)
+            int targetIndex = FindCardinSlot(target, targetSlots);
+            Debug.Log(targetIndex);
+            for (int i = 0; i < Position.Count; i++)
+            {
+                if (targetIndex + Position[i] < targetSlots.Count && targetIndex + Position[i] >= 0)
                 {
 
-                    Attack(temp, Damage[i]);
-                    temp.PlayAnim(TargetHitClip);
+                    Card temp = GetCardinSlot(targetIndex + Position[i], targetSlots);
+                    if (temp != null)
+                    {
+
+                        Attack(temp, Damage[i]);
+                        temp.PlayAnim(TargetHitClip);
+                    }
                 }
             }
         }
         // Attack(target, Damage[0]);
-        
-        SoundFxManager.Instance.AudioManager(AttackingSFX,GameObject.FindWithTag("Canvas").transform, 1f);
+
+        SoundFxManager.Instance.AudioManager(AttackingSFX, GameObject.FindWithTag("Canvas").transform, 1f);
         user.PlayAnim(AttackingClip);
         // target.PlayAnim(TargetHitClip);
-        
+
         // throw new System.NotImplementedException();
     }
-    
+
     public void Attack(Card target, int Damage)
     {
         if (target != null)

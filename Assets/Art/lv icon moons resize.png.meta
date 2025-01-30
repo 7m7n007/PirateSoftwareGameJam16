@@ -235,7 +235,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lv icon moons resize_0: -1394750521327887959
+      lv icon moons resize_1: 4662787527636004438
+      lv icon moons resize_2: 5676684854801076382
+      lv icon moons resize_3: 4350919431933036959
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

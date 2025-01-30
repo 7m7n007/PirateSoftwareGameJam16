@@ -21,6 +21,13 @@ public class HealerClass : BaseCard
     // [SerializeField] public List<int> PositionPattern;
     public override void Action(Card user, Card target, List<GameObject> targetSlots)
     {
+        if (target.isUnit)
+        {
+            Heal(target, Heals[Heals.Count/2]);
+            target.PlayAnim(TargetHitClip);
+        }
+        else{
+
         int targetIndex = FindCardinSlot(target, targetSlots);
         Debug.Log(targetIndex);
         for (int i = 0; i < Position.Count; i++)
@@ -37,6 +44,7 @@ public class HealerClass : BaseCard
                 }
             }
         }  // Heal(target, Heals[0]);
+        }
 
         SoundFxManager.Instance.AudioManager(HealingSFX, GameObject.FindWithTag("Canvas").transform, 1f);
         user.PlayAnim(AttackingClip);

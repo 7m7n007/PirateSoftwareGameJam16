@@ -9,6 +9,7 @@ public class EnemyUnit : MonoBehaviour
     public int Barrier;
     public int BarrierThreshold;
     [SerializeField] TMP_Text BarrierText;
+    [SerializeField] TMP_Text ThreshHoldText;
     [SerializeField] public List<BaseCard> EnemyDeck;
     [SerializeField] GameObject BlankCard;
     [SerializeField] AnimationClip SpawnAnim;
@@ -28,6 +29,14 @@ public class EnemyUnit : MonoBehaviour
         }
         Barrier = barrier;
         BarrierText.text = barrier.ToString();
+        ThreshHoldText.text = BarrierThreshold.ToString();
+
+        // if(EnemyDeck.Count<=0 && enemySlot.EnemySlots.Count<=0){
+        //     print("enemyLoses");
+        // }
+        // if(gameObject.GetComponentInChildren<Card>().CardHealth<=0){
+        //     print("enemyLost");
+        // }
     }
     public void EnemyPlaceCardOne(Transform Slot)
     {

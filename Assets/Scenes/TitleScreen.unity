@@ -638,27 +638,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Deck: []
-  UnlockedCards:
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
+  UnlockedCards: []
   AllCards:
   - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
   - {fileID: 11400000, guid: e5685a0e29d63b84a8fe4a86d1c99e90, type: 2}
   - {fileID: 11400000, guid: 84091f40e80838d4d92d2ea7c642006a, type: 2}
   - {fileID: 11400000, guid: 8a0c45140e4d3a94b816111e2e0eb619, type: 2}
   ShopCards:
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
-  - {fileID: 11400000, guid: 10997417cd07ae54a89efa9f2aad52c6, type: 2}
+  - {fileID: 11400000, guid: e8d9ec583c4defe469b609c1994bb06b, type: 2}
+  - {fileID: 11400000, guid: d7d00271365acf8408cb55aa197bf510, type: 2}
+  - {fileID: 11400000, guid: 4bee36a270506e4419f594e66b820fc4, type: 2}
+  - {fileID: 11400000, guid: 05469d635302cfb4ab9e119e54637ecf, type: 2}
+  - {fileID: 11400000, guid: 3ad88b7552410d64caafb7236e57c9ae, type: 2}
 --- !u!1 &302062683
 GameObject:
   m_ObjectHideFlags: 0

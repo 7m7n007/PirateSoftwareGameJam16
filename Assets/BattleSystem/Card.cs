@@ -23,6 +23,8 @@ public class Card : MonoBehaviour, IPointerClickHandler
     [SerializeField] TMP_Text cardNameVisual;
     [SerializeField] TMP_Text cardAttackVisual;
     [SerializeField] TMP_Text cardHealthVisual;
+    [SerializeField] TMP_Text cardDescription;
+
     [SerializeField] Image cardImg;
     [SerializeField] LineRenderer lineRenderer;
     public bool isActive;
@@ -32,9 +34,12 @@ public class Card : MonoBehaviour, IPointerClickHandler
     private Animator animator;
     private AnimatorOverrideController animatorOverrideController;
     public bool runSpawnAnim;
+    public bool isUnit;
+    public bool isEnemy;
     public AnimationClip SpawnAnim;
     [SerializeField] AnimationClip animationClip;
     [SerializeField] GameObject Border;
+    public static event Action<bool> CardDestroyed;
     // public UnityEvent unityEvent;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -70,6 +75,10 @@ public class Card : MonoBehaviour, IPointerClickHandler
         {
 
             target.setBorder(false);
+        }
+        if(isUnit){
+            CardDestroyed.Invoke(isEnemy);
+
         }
     }
     // Update is called once per frame
@@ -143,6 +152,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
         cardNameVisual.text = CardName.ToString();
         cardAttackVisual.text = CardAttack.ToString();
         cardHealthVisual.text = CardHealth.ToString();
+        cardDescription.text = CardSO.CardDescription;
         cardImg.sprite = CardSprite;
         // cardImg=CardSprite;
     }

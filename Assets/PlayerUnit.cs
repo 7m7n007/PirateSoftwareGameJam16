@@ -9,6 +9,7 @@ public class PlayerUnit : MonoBehaviour, IPointerClickHandler
     public int Barrier;
     public int BarrierThreshold;
     [SerializeField] TMP_Text BarrierText;
+    [SerializeField] TMP_Text ThresholdText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -25,6 +26,7 @@ public class PlayerUnit : MonoBehaviour, IPointerClickHandler
         }
         Barrier = barrier;
         BarrierText.text = barrier.ToString();
+        ThresholdText.text = BarrierThreshold.ToString();
     }
     public void OnPointerClick(PointerEventData eventData)
     {

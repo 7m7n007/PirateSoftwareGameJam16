@@ -9,6 +9,7 @@ public abstract class BaseCard:ScriptableObject
     public int CardHealth;
     // public Card target;
     public Sprite CardSprite;
+    public string CardDescription;
     
     public bool selfTargeting;
     public abstract void Action(Card user,Card target,List<GameObject> targetSlots);
