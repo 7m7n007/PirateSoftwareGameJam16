@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &100271527104640162
+--- !u!1001 &1207772906511837297
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -42,7 +42,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2102424193721989653, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
       propertyPath: m_Name
-      value: DeckCard
+      value: DeckCard 1
       objectReference: {fileID: 0}
     - target: {fileID: 2855407004563074464, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
       propertyPath: m_SizeDelta.x

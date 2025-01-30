@@ -1,10 +1,19 @@
 fileFormatVersion: 2
-guid: 7f0d467ce9e170d40ac0ea89a16fe340
+guid: 0db4892a5d827084f99b4cadb6a75e1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1252693825282526391
-    second: BlankCardNew_0
+      213: 5811064907940691832
+    second: game logo (1)_0
+  - first:
+      213: 6032639054122596681
+    second: game logo (1)_1
+  - first:
+      213: 7100006634471832690
+    second: game logo (1)_2
+  - first:
+      213: 1530314306831931317
+    second: game logo (1)_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -126,13 +135,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BlankCardNew_0
+      name: game logo (1)_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 130
-        height: 180
+        x: 91
+        y: 135
+        width: 322
+        height: 170
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +150,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 943b5bb5a998d9ee0800000000000000
-      internalID: -1252693825282526391
+      spriteID: 87ffa84debc05a050800000000000000
+      internalID: 5811064907940691832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game logo (1)_1
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 35
+        width: 62
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9493027e14d38b350800000000000000
+      internalID: 6032639054122596681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game logo (1)_2
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 75
+        width: 154
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c3c96aa6a488260800000000000000
+      internalID: 7100006634471832690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: game logo (1)_3
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 75
+        width: 150
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b75a6d01c4cc3510800000000000000
+      internalID: 1530314306831931317
       vertices: []
       indices: 
       edges: []
@@ -151,7 +226,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +236,10 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BlankCardNew_0: -1252693825282526391
+      game logo (1)_0: 5811064907940691832
+      game logo (1)_1: 6032639054122596681
+      game logo (1)_2: 7100006634471832690
+      game logo (1)_3: 1530314306831931317
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

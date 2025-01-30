@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SceneInAnim
+  m_Name: SceneOutAnim
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -23,30 +23,30 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 663.38275
-        inSlope: -108.8402
-        outSlope: -108.8402
+        value: 0
+        inSlope: -326.0188
+        outSlope: -326.0188
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.21517712
+        outWeight: 0.638051
       - serializedVersion: 3
-        time: 0.5
-        value: -0.00011444092
-        inSlope: -2203.1943
-        outSlope: Infinity
-        tangentMode: 97
-        weightedMode: 0
-        inWeight: 0.18270081
-        outWeight: 0.19501543
-      - serializedVersion: 3
-        time: 1
+        time: 0.083333336
         value: 0
-        inSlope: -3058.0767
-        outSlope: -3058.0767
+        inSlope: -326.0188
+        outSlope: -326.0188
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.21614021
+        inWeight: 0.33333334
+        outWeight: 0.638051
+      - serializedVersion: 3
+        time: 1
+        value: -663.3828
+        inSlope: -3257.129
+        outSlope: -3257.129
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33192295
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2
@@ -101,30 +101,30 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 663.38275
-        inSlope: -108.8402
-        outSlope: -108.8402
+        value: 0
+        inSlope: -326.0188
+        outSlope: -326.0188
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
-        outWeight: 0.21517712
+        outWeight: 0.638051
       - serializedVersion: 3
-        time: 0.5
-        value: -0.00011444092
-        inSlope: -2203.1943
-        outSlope: Infinity
-        tangentMode: 97
-        weightedMode: 0
-        inWeight: 0.18270081
-        outWeight: 0.19501543
-      - serializedVersion: 3
-        time: 1
+        time: 0.083333336
         value: 0
-        inSlope: -3058.0767
-        outSlope: -3058.0767
+        inSlope: -326.0188
+        outSlope: -326.0188
         tangentMode: 0
         weightedMode: 0
-        inWeight: 0.21614021
+        inWeight: 0.33333334
+        outWeight: 0.638051
+      - serializedVersion: 3
+        time: 1
+        value: -663.3828
+        inSlope: -3257.129
+        outSlope: -3257.129
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33192295
         outWeight: 0.33333334
       m_PreInfinity: 2
       m_PostInfinity: 2

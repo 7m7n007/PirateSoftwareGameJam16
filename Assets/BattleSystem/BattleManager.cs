@@ -6,6 +6,7 @@ using UnityEditor;
 using JetBrains.Annotations;
 using UnityEngine.UI;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class BattleManager : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class BattleManager : MonoBehaviour
     public Card LastSelectedCard;
     public BattleStages battleStages;
     [SerializeField] changePhaseImg changePhaseImg;
+    [SerializeField] GameObject WinScreen;
 
     [SerializeField] DeckScript Deck;
     [SerializeField] bool isReady;
@@ -30,11 +32,23 @@ public class BattleManager : MonoBehaviour
     {
         Card.CardSelected -= SelectCard;
     }
+    private void Update()
+    {
+        if (!gameRunning)
+        {
+            StopAllCoroutines();
+            GameFinish();
+            gameRunning=true;
 
+            // SceneController.instance.LoadScene("DeckMenu");
+        }
+    }
+    public void GameFinish(){
+        WinScreen.SetActive(true);
+    }
     public void startBattle()
     {
         Coroutine c = StartCoroutine(RewampedBattle());
-
     }
     public IEnumerator RewampedBattle()
     {
@@ -45,11 +59,26 @@ public class BattleManager : MonoBehaviour
         yield return StartCoroutine(Deck.FirstHand(1f));
         // Enemy Places Card
         yield return StartCoroutine(EnemyPlacesCard());
-        // Player Places Cards
-        yield return StartCoroutine(PlacingCards());
+
+        while (gameRunning)
+        {
+            // print("gamerunning");
+            // // Player Places Cards
+            yield return StartCoroutine(PlacingCards());
+
+            // Round begins
+            yield return StartCoroutine(BattleRound());
+            yield return NextRound();
+        }
+    }
+    public IEnumerator NextRound()
+    {
+        Deck.DrawOneCard();
+        yield return StartCoroutine(EnemyPlacesCard());
+    }
+    public IEnumerator BattleRound()
+    {
         // Round 1 
-
-
 
         List<Card> PlayerCards = new List<Card>();
         foreach (GameObject card in PlayerSlots)
@@ -91,8 +120,8 @@ public class BattleManager : MonoBehaviour
         changePhaseImg.NextPhase();
         print("Enemies Turn");
         yield return new WaitForSeconds(2f);
-        
-        
+
+
         EnemyCards = new List<Card>();
         foreach (GameObject card in EnemySlots)
         {
@@ -101,7 +130,7 @@ public class BattleManager : MonoBehaviour
                 EnemyCards.Add(card.GetComponentInChildren<Card>());
             }
         }
-        
+
         // Enemy attack
         yield return StartCoroutine(EnemyAttack(EnemyCards, PlayerCards));
         PlayerReady(false);
@@ -118,7 +147,7 @@ public class BattleManager : MonoBehaviour
         //     card.GetComponent<drag>().enabled = true;
         // }
         // yield return null;
-
+        // StartCoroutine(RewampedBattle());
 
         // }
     }
@@ -154,8 +183,12 @@ public class BattleManager : MonoBehaviour
     {
         foreach (GameObject Slot in EnemySlots)
         {
-            EnemyUnit.GetComponent<EnemyUnit>().EnemyPlaceCardOne(Slot.transform);
-            yield return new WaitForSeconds(0.2f);
+            if (Slot.transform.childCount <= 0)
+            {
+
+                EnemyUnit.GetComponent<EnemyUnit>().EnemyPlaceCardOne(Slot.transform);
+                yield return new WaitForSeconds(0.2f);
+            }
         }
         // print("EnemyCardPlaced");
 
@@ -261,7 +294,7 @@ public class BattleManager : MonoBehaviour
                     if (EnemyUnit.GetComponent<EnemyUnit>().Barrier < EnemyUnit.GetComponent<EnemyUnit>().BarrierThreshold)
                     {
                         newEnemyCards.Add(EnemyUnit.GetComponentInChildren<Card>());
-                        print("Enemy Barrier Low");
+                        // print("Enemy Barrier Low");
                     }
                     ActivateCards(newEnemyCards);
                     LastSelectedCard = null;
@@ -385,7 +418,7 @@ public class BattleManager : MonoBehaviour
 
                 }
                 enemy.target.setBorder(true);
-                SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip,transform,1f,0.3f);
+                SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip, transform, 1f, 0.3f);
                 yield return new WaitForSeconds(0.3f);
             }
         }
