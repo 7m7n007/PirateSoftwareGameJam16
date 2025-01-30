@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: Buff Remover
   m_EditorClassIdentifier: 
   CardName: TempName
-  CardHealth: 5
+  CardHealth: 3
   CardSprite: {fileID: -1252693825282526391, guid: 7f0d467ce9e170d40ac0ea89a16fe340, type: 3}
-  selfTargeting: 0
-  Damage: 04000000
+  selfTargeting: 1
+  Damage: 00000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
-  TargetHitClip: {fileID: 7400000, guid: 19b3a3290be72b8458cd41bbd4631414, type: 2}
+  TargetHitClip: {fileID: 7400000, guid: 272956e3635deee4eb437b7d9614c18d, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}

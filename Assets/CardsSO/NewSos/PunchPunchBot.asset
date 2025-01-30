@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
+  m_Name: PunchPunchBot
+  m_EditorClassIdentifier: 
+  CardName: Punch Punch Bot
+  CardHealth: 5
+  CardSprite: {fileID: -7659879201271882899, guid: e998304d8e66735419f68242d8ca2488, type: 3}
+  selfTargeting: 0
+  Damage: 05000000
+  Position: 00000000
+  AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
+  TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}
+  AttackingSFX: {fileID: 0}
