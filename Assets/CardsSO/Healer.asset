@@ -16,7 +16,7 @@ MonoBehaviour:
   CardHealth: 5
   CardSprite: {fileID: -1252693825282526391, guid: 7f0d467ce9e170d40ac0ea89a16fe340, type: 3}
   selfTargeting: 1
-  Heals: 
+  Heals: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 19b3a3290be72b8458cd41bbd4631414, type: 2}
