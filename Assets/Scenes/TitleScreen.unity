@@ -891,13 +891,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 84091f40e80838d4d92d2ea7c642006a, type: 2}
   - {fileID: 11400000, guid: 8a0c45140e4d3a94b816111e2e0eb619, type: 2}
   ShopCards:
-  - {fileID: 11400000, guid: e8d9ec583c4defe469b609c1994bb06b, type: 2}
+  - {fileID: 11400000, guid: 4f9fccda173abc649aca85482405344d, type: 2}
+  - {fileID: 11400000, guid: 411ecd05a8e60e4438b1f412eac586d9, type: 2}
+  - {fileID: 11400000, guid: 4f58aeb111365ab4fb2b5edc4bb8fec7, type: 2}
   - {fileID: 11400000, guid: d7d00271365acf8408cb55aa197bf510, type: 2}
-  - {fileID: 11400000, guid: 4bee36a270506e4419f594e66b820fc4, type: 2}
-  - {fileID: 11400000, guid: 05469d635302cfb4ab9e119e54637ecf, type: 2}
-  - {fileID: 11400000, guid: 3ad88b7552410d64caafb7236e57c9ae, type: 2}
-  ShopPacks: []
-  money: 25
+  - {fileID: 11400000, guid: f5d2b6d9bed70e342b77329dd7410ae1, type: 2}
+  ShopPacks:
+  - {fileID: 11400000, guid: f8cf9d204f23149479aa091e2e2e62a6, type: 2}
+  money: 40
 --- !u!1 &302062683
 GameObject:
   m_ObjectHideFlags: 0

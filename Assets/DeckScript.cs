@@ -17,9 +17,10 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     // [SerializeField] GameObject EmptySlot;
     private void Awake()
     {
-        CardsData cardRecord= GameObject.FindWithTag("GameController").GetComponent<CardsData>();
-        PlayerDeck=new List<BaseCard>();
-        foreach(BaseCard card in cardRecord.Deck){
+        CardsData cardRecord = GameObject.FindWithTag("GameController").GetComponent<CardsData>();
+        PlayerDeck = new List<BaseCard>();
+        foreach (BaseCard card in cardRecord.Deck)
+        {
             PlayerDeck.Add(card);
         }
         // PlayerDeck = cardRecord.Deck;
@@ -30,50 +31,59 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     }
     public void OnPointerClick(PointerEventData eventData)
     {
-    //     if (PlayerDeck.Count > 0)
-    //     {
+        //     if (PlayerDeck.Count > 0)
+        //     {
 
-    //         int totalSlots = PlayerHand.transform.childCount;
-    //         for (int i = 0; i < totalSlots; i++)
-    //         {
-    //             if (PlayerHand.transform.GetChild(i).childCount == 0)
-    //             {
-    //                 DrawCard(PlayerHand.transform.GetChild(i).transform);
-    //                 return;
-    //             }
-    //         }
-    //         GameObject newSlot = PlayerHand.GetComponent<HandScript>().createSlot();
-    //         DrawCard(newSlot.transform);
+        //         int totalSlots = PlayerHand.transform.childCount;
+        //         for (int i = 0; i < totalSlots; i++)
+        //         {
+        //             if (PlayerHand.transform.GetChild(i).childCount == 0)
+        //             {
+        //                 DrawCard(PlayerHand.transform.GetChild(i).transform);
+        //                 return;
+        //             }
+        //         }
+        //         GameObject newSlot = PlayerHand.GetComponent<HandScript>().createSlot();
+        //         DrawCard(newSlot.transform);
 
-    //     }
+        //     }
 
-    //     else
-    //     {
-    //         gameObject.SetActive(false);
-    //     }
+        //     else
+        //     {
+        //         gameObject.SetActive(false);
+        //     }
 
     }
-    private void DrawCard(Transform Slot,bool isSingle=true)
+    private void DrawCard(Transform Slot, bool isSingle = true)
     {
-        GameObject newCard = Instantiate(BlankCard, Slot);
-        int randCardIndex = UnityEngine.Random.Range(0, PlayerDeck.Count);
-        newCard.GetComponent<Card>().CardSO = PlayerDeck[randCardIndex];
-        newCard.GetComponent<Card>().runSpawnAnim = true;
-        newCard.GetComponent<Card>().SpawnAnim = SpawnAnim;
-        PlayerDeck.RemoveAt(randCardIndex);
+        if (PlayerDeck.Count > 0)
+        {
 
-        if(isSingle){
+            GameObject newCard = Instantiate(BlankCard, Slot);
+            int randCardIndex = UnityEngine.Random.Range(0, PlayerDeck.Count);
+            newCard.GetComponent<Card>().CardSO = PlayerDeck[randCardIndex];
+            newCard.GetComponent<Card>().runSpawnAnim = true;
+            newCard.GetComponent<Card>().SpawnAnim = SpawnAnim;
+            PlayerDeck.RemoveAt(randCardIndex);
 
-        SoundFxManager.Instance.AudioManager(DrawCardSingleAudioClip, transform, 1f);
+            if (isSingle)
+            {
+
+                SoundFxManager.Instance.AudioManager(DrawCardSingleAudioClip, transform, 1f);
+            }
         }
 
     }
-    public void DrawFirstHand(){
+    public void DrawFirstHand()
+    {
         StartCoroutine(FirstHand(1f));
     }
-    public void DrawOneCard(){
-        for(int i = 0;i<PlayerHand.transform.childCount;i++){
-            if(PlayerHand.transform.GetChild(i).childCount<=0){
+    public void DrawOneCard()
+    {
+        for (int i = 0; i < PlayerHand.transform.childCount; i++)
+        {
+            if (PlayerHand.transform.GetChild(i).childCount <= 0)
+            {
                 DrawCard(PlayerHand.transform.GetChild(i));
                 break;
             }
@@ -81,11 +91,11 @@ public class DeckScript : MonoBehaviour, IPointerClickHandler
     }
     public IEnumerator FirstHand(float time)
     {
-        SoundFxManager.Instance.AudioManagerFixedTime(DrawCardMultipleAudioClip, transform, 1f,time);
+        SoundFxManager.Instance.AudioManagerFixedTime(DrawCardMultipleAudioClip, transform, 1f, time);
 
         for (int i = 0; i < StartingCards; i++)
         {
-            DrawCard(PlayerHand.transform.GetChild(i).transform,false);
+            DrawCard(PlayerHand.transform.GetChild(i).transform, false);
             yield return new WaitForSeconds(0.2f);
         }
         // print("stop");

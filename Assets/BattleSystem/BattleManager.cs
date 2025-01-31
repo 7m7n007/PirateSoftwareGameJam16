@@ -156,7 +156,7 @@ public class BattleManager : MonoBehaviour
         EnemyCards = new List<Card>();
         foreach (GameObject card in EnemySlots)
         {
-            if (card.GetComponentInChildren<Card>() != null)
+            if (card.transform.childCount>0)
             {
                 EnemyCards.Add(card.GetComponentInChildren<Card>());
             }
