@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: '#SpaceColony'
   m_EditorClassIdentifier: 
   CardName: Card
-  CardHealth: 0
-  CardSprite: {fileID: 6301701281743076448, guid: 0fc0a57adac9b43428abb3e23ea0caf1, type: 3}
+  CardHealth: 10
+  CardPower: 10
+  CardSprite: {fileID: -234008762377819306, guid: f2c89ce83aebb0f47817e70f823169fc, type: 3}
   CardDescription: 
   selfTargeting: 0
   Damage: 

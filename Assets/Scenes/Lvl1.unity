@@ -241,6 +241,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2899369021086811989, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 2531156391632571100, guid: d4cdeeae9afe959469ff8d21a42c08f4, type: 3}
     - target: {fileID: 3727907609527215759, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
       propertyPath: m_SizeDelta.x
       value: 266.06
@@ -257,6 +261,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 3.8
       objectReference: {fileID: 0}
+    - target: {fileID: 4883202295339801104, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
+      propertyPath: CardSO
+      value: 
+      objectReference: {fileID: 11400000, guid: d87c0bf791156f94e9bbe1d14f08aad2, type: 2}
     - target: {fileID: 4883202295339801104, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
       propertyPath: isUnit
       value: 1

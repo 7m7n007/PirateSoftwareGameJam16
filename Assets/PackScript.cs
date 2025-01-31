@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class PackScript : MonoBehaviour
 {
-    [SerializeField] Pack packSO;
+    public Pack packSO;
     [SerializeField] List<BaseCard> cards;
     [SerializeField] List<int> cardsWeights;
     [SerializeField] int packSize;

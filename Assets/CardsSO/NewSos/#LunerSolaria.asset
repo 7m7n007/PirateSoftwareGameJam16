@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: '#LunerSolaria'
   m_EditorClassIdentifier: 
   CardName: Card
-  CardHealth: 0
-  CardSprite: {fileID: -6239038722799697333, guid: 598b39f403b3c2e48b858ea6ae101612, type: 3}
+  CardHealth: 10
+  CardPower: 10
+  CardSprite: {fileID: -8171702017873827616, guid: b5d5ad314e371b845b98fb7a871192ed, type: 3}
   CardDescription: 
   selfTargeting: 0
   Damage: 

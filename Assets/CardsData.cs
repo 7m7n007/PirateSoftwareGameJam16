@@ -9,6 +9,8 @@ public class CardsData : MonoBehaviour
     public List<BaseCard> AllCards;
 
     public List<BaseCard> ShopCards;
+    public List<Pack> ShopPacks;
+    
     public int money;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
