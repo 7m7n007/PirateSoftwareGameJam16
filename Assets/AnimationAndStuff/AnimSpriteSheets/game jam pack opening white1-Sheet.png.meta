@@ -79,7 +79,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -117,7 +117,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -173,7 +173,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 131
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -193,9 +193,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_1
       rect:
         serializedVersion: 2
-        x: 131
+        x: 132
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -215,9 +215,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_2
       rect:
         serializedVersion: 2
-        x: 263
+        x: 264
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,9 +237,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_3
       rect:
         serializedVersion: 2
-        x: 395
+        x: 396
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -259,9 +259,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_4
       rect:
         serializedVersion: 2
-        x: 527
+        x: 528
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,9 +281,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_5
       rect:
         serializedVersion: 2
-        x: 659
+        x: 660
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_6
       rect:
         serializedVersion: 2
-        x: 791
+        x: 792
         y: 0
-        width: 132
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,10 +325,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_7
       rect:
         serializedVersion: 2
-        x: 923
+        x: 924
         y: 0
-        width: 132
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -347,10 +347,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_8
       rect:
         serializedVersion: 2
-        x: 1055
+        x: 1056
         y: 0
-        width: 132
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -369,9 +369,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_9
       rect:
         serializedVersion: 2
-        x: 1187
+        x: 1188
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -391,9 +391,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_10
       rect:
         serializedVersion: 2
-        x: 1319
+        x: 1320
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -413,9 +413,9 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_11
       rect:
         serializedVersion: 2
-        x: 1451
+        x: 1452
         y: 0
-        width: 132
+        width: 130
         height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -435,10 +435,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_12
       rect:
         serializedVersion: 2
-        x: 1583
+        x: 1584
         y: 0
-        width: 132
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_13
       rect:
         serializedVersion: 2
-        x: 1715
+        x: 1716
         y: 0
-        width: 132
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -479,10 +479,10 @@ TextureImporter:
       name: game jam pack opening white1-Sheet_14
       rect:
         serializedVersion: 2
-        x: 1847
+        x: 1848
         y: 0
-        width: 131
-        height: 173
+        width: 130
+        height: 200
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -501,7 +501,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: cd2abbf8864407f4c939cbe520020ff0
     internalID: 0
     vertices: []
     indices: 

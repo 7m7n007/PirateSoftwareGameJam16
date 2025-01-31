@@ -8383,6 +8383,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5d2b6d9bed70e342b77329dd7410ae1, type: 2}
   - {fileID: 11400000, guid: 4218d379a97dd6a4ba0efca68e563968, type: 2}
   - {fileID: 11400000, guid: cb66e12c3e12f254fb396ca2b9bdf4f4, type: 2}
+  RewardPacks:
+  - {fileID: 11400000, guid: d4ef7cc988e3fa3498cab7f8aabb8ffa, type: 2}
+  - {fileID: 11400000, guid: d4ef7cc988e3fa3498cab7f8aabb8ffa, type: 2}
+  - {fileID: 11400000, guid: d4ef7cc988e3fa3498cab7f8aabb8ffa, type: 2}
   RewardMoney: 60
 --- !u!4 &1199104612
 Transform:

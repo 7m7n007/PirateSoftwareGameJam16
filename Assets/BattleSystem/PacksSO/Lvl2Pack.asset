@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83d8a98cb1b68464db8bb8d1d10b2594, type: 3}
+  m_Name: Lvl2Pack
+  m_EditorClassIdentifier: 
+  cards:
+  - {fileID: 11400000, guid: eab66ce2368019540a76924eb8db45da, type: 2}
+  - {fileID: 11400000, guid: 7cd6a2b8dec1ad548a3f6f7b8424bc60, type: 2}
+  cardsWeights: 0700000003000000
+  packSize: 2
+  packSprite: {fileID: 8261509039288294951, guid: e43a8e7ef4b4a7f42ad0aa1d50cb45de, type: 3}
+  packAnim: {fileID: 7400000, guid: 8d4c0869b5fbc0b45b6783d7ea8d5ba7, type: 2}

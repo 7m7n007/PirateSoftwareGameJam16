@@ -20,3 +20,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4f9fccda173abc649aca85482405344d, type: 2}
   cardsWeights: 1400000014000000050000000a00000032000000
   packSize: 5
+  packSprite: {fileID: -3062131529581769233, guid: 788b1174465128f42b12fdfc71afee88, type: 3}
+  packAnim: {fileID: 7400000, guid: 682aff76a513e7849bc6a9fc757173a1, type: 2}

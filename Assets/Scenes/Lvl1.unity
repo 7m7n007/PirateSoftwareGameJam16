@@ -5546,7 +5546,17 @@ MonoBehaviour:
   BarrierThreshold: 18
   BarrierText: {fileID: 268611614}
   ThreshHoldText: {fileID: 1374971644}
-  EnemyDeck: []
+  EnemyDeck:
+  - {fileID: 11400000, guid: 0c2f3dbcdcbb5e04a94cfac6f5c6e23c, type: 2}
+  - {fileID: 11400000, guid: 79276982bdc0a8648a149fdb37862db7, type: 2}
+  - {fileID: 11400000, guid: 94956f2371a7fa84fa2ee83468f89cf2, type: 2}
+  - {fileID: 11400000, guid: 07c1f1278f29d9948bbdd53d8a44703c, type: 2}
+  - {fileID: 11400000, guid: 07c1f1278f29d9948bbdd53d8a44703c, type: 2}
+  - {fileID: 11400000, guid: c42df9edfa9588f4a99e33b960ad1e43, type: 2}
+  - {fileID: 11400000, guid: fc7b02d4ccf8652438d38d928a8e7166, type: 2}
+  - {fileID: 11400000, guid: fc7b02d4ccf8652438d38d928a8e7166, type: 2}
+  - {fileID: 11400000, guid: 97e63b072ffadfc4aa22999760d366db, type: 2}
+  - {fileID: 11400000, guid: 97e63b072ffadfc4aa22999760d366db, type: 2}
   BlankCard: {fileID: 2102424193721989653, guid: 9b9a6bbd45532314d886c3e9e0eac295, type: 3}
   SpawnAnim: {fileID: 7400000, guid: a0825437f6ee22243ac2e388f7bc86de, type: 2}
 --- !u!1001 &800287603
@@ -8383,6 +8393,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5d2b6d9bed70e342b77329dd7410ae1, type: 2}
   - {fileID: 11400000, guid: 4218d379a97dd6a4ba0efca68e563968, type: 2}
   - {fileID: 11400000, guid: cb66e12c3e12f254fb396ca2b9bdf4f4, type: 2}
+  RewardPacks:
+  - {fileID: 11400000, guid: f8cf9d204f23149479aa091e2e2e62a6, type: 2}
+  - {fileID: 11400000, guid: f8cf9d204f23149479aa091e2e2e62a6, type: 2}
   RewardMoney: 40
 --- !u!4 &1199104612
 Transform:

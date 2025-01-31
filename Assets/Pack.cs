@@ -8,4 +8,6 @@ public class Pack : ScriptableObject
     public List<BaseCard> cards;
     public List<int> cardsWeights;
     public int packSize;
+    public Sprite packSprite;
+    public AnimationClip packAnim;
 }

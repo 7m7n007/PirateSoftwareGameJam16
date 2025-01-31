@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+// using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PackScript : MonoBehaviour
 {
@@ -20,13 +22,26 @@ public class PackScript : MonoBehaviour
     // [SerializeField] TMP_Text cardText;
     [SerializeField] AnimationClip SpawnAnim;
     [SerializeField] AudioClip OpeningClip;
+    [SerializeField] Image PackImg;
+    [SerializeField] Animator animator;
+    private AnimatorOverrideController animatorOverrideController;
+    [SerializeField] AnimationClip animationClip;
 
+    private void Awake() {
+        
+    }
     // [SerializeField] AnimationCurve animationCurve;
     private void Start()
     {
-        cards=packSO.cards;
-        cardsWeights=packSO.cardsWeights;
-        packSize=packSO.packSize;
+        cards = packSO.cards;
+        cardsWeights = packSO.cardsWeights;
+        packSize = packSO.packSize;
+        PackImg.sprite = packSO.packSprite;
+        animationClip = packSO.packAnim;
+
+        animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
+        animator.runtimeAnimatorController = animatorOverrideController;
+        animatorOverrideController["BasicAttackAnim"] = animationClip;
 
         int total = cardsWeights.Sum();
         float cf = 0;
@@ -44,7 +59,7 @@ public class PackScript : MonoBehaviour
     private IEnumerator openPack(GameObject openingScene, Transform spawnSlot, TMP_Text cardText)
     {
         transform.GetComponentInChildren<Animator>().SetTrigger("Open");
-        SoundFxManager.Instance.AudioManager(OpeningClip,transform,1f);
+        SoundFxManager.Instance.AudioManager(OpeningClip, transform, 1f);
         yield return new WaitForSeconds(2f);
         openingScene.SetActive(true);
         List<BaseCard> newcards = openCards();
