@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
   m_Name: '#SpaceColony'
   m_EditorClassIdentifier: 
-  CardName: Card
-  CardHealth: 0
+  CardName: SpaceColony
+  CardHealth: 20
   CardSprite: {fileID: 6301701281743076448, guid: 0fc0a57adac9b43428abb3e23ea0caf1, type: 3}
   CardDescription: 
   selfTargeting: 0

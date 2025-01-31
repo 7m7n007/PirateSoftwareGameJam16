@@ -10,15 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: '#LunerSolaria'
+  m_Name: '@Player'
   m_EditorClassIdentifier: 
-  CardName: Card
+  CardName: Player
   CardHealth: 15
-  CardSprite: {fileID: -8171702017873827616, guid: b5d5ad314e371b845b98fb7a871192ed, type: 3}
+  CardSprite: {fileID: 2531156391632571100, guid: d4cdeeae9afe959469ff8d21a42c08f4, type: 3}
   CardDescription: 
   selfTargeting: 0
-  Damage: 
-  Position: 
+  Damage: 00000000
+  Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
-  TargetHitClip: {fileID: 0}
+  TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
