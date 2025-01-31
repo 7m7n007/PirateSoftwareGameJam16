@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: '#ArsenalDevil'
   m_EditorClassIdentifier: 
   CardName: Card
-  CardHealth: 0
-  CardSprite: {fileID: 781462751686744938, guid: d1db1d6457d5f124982410bd85b1b3b3, type: 3}
+  CardHealth: 10
+  CardPower: 10
+  CardSprite: {fileID: -8381807707448003702, guid: b0d6b95951324fd4993bfdabec7ebf61, type: 3}
   CardDescription: 
   selfTargeting: 0
   Damage: 

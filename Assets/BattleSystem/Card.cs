@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 // using Microsoft.Unity.VisualStudio.Editor;
 using TMPro;
@@ -80,7 +81,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
         if (target != null)
         {
 
-            target.setBorder(false);
+            target.setBorder(false,Color.clear);
         }
         if(isUnit){
             CardDestroyed.Invoke(isEnemy);
@@ -121,8 +122,12 @@ public class Card : MonoBehaviour, IPointerClickHandler
         // }
         if (CardHealth <= 0)
         {
-            Destroy(gameObject);
+            StartCoroutine(cardDying());
         }
+    }
+    IEnumerator cardDying(){
+            yield return new WaitForSeconds(1.5f);
+            Destroy(gameObject);
     }
 
     public void Action(List<GameObject> targetSlots)
@@ -176,8 +181,9 @@ public class Card : MonoBehaviour, IPointerClickHandler
         animatorOverrideController["BasicAttackAnim"] = animationClip;
         animator.SetTrigger("Attack");
     }
-    public void setBorder(bool setBorder)
+    public void setBorder(bool setBorder,Color color)
     {
+        Border.GetComponent<RawImage>().color = color;
         Border.SetActive(setBorder);
     }
 }

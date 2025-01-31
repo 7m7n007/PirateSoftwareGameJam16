@@ -205,13 +205,13 @@ public class BattleManager : MonoBehaviour
                 {
 
                     EnemyCards[i].Action(EnemySlots);
-                    EnemyCards[i].target.setBorder(false);
+                    EnemyCards[i].target.setBorder(false,Color.clear);
                     EnemyCards[i].target = null;
                 }
                 else
                 {
                     EnemyCards[i].Action(PlayerSlots);
-                    EnemyCards[i].target.setBorder(false);
+                    EnemyCards[i].target.setBorder(false,Color.clear);
                     EnemyCards[i].target = null;
 
                 }
@@ -345,6 +345,7 @@ public class BattleManager : MonoBehaviour
                         // print("Enemy Barrier Low");
                     }
                     ActivateCards(newEnemyCards);
+                    SelectableCards(EnemyCards);
                     LastSelectedCard = null;
                     while (LastSelectedCard == null)
                     {
@@ -353,17 +354,20 @@ public class BattleManager : MonoBehaviour
                     AttackingCard.target = LastSelectedCard;
 
                     attackStages = AttackStages.Attack;
+                    DeSelectableCards(EnemyCards);
                     DeActivateCards(newEnemyCards);
                 }
                 else
                 {
                     ActivateCards(newPlayerCards);
+                    SelectableCards(PlayerCards);
                     LastSelectedCard = null;
                     while (LastSelectedCard == null)
                     {
                         yield return null;
                     }
                     AttackingCard.target = LastSelectedCard;
+                    DeSelectableCards(PlayerCards);
                     attackStages = AttackStages.Attack;
                     DeActivateCards(newPlayerCards);
 
@@ -433,6 +437,28 @@ public class BattleManager : MonoBehaviour
             }
         }
     }
+    public void SelectableCards(List<Card> cards)
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            if (cards[i] != null)
+            {
+                
+                cards[i].setBorder(true,new Color(207/255f,36/255f,211/255f));
+            }
+        }
+    }
+    public void DeSelectableCards(List<Card> cards)
+    {
+        for (int i = 0; i < cards.Count; i++)
+        {
+            if (cards[i] != null)
+            {
+
+                cards[i].setBorder(false,Color.clear);
+            }
+        }
+    }
     public void DeActivateCards(List<Card> cards)
     {
         for (int i = 0; i < cards.Count; i++)
@@ -477,7 +503,7 @@ public class BattleManager : MonoBehaviour
                         enemy.target = EnemyCards[UnityEngine.Random.Range(0, enemyCardNotNull.Count)];
 
                     }
-                    enemy.target.setBorder(true);
+                    enemy.target.setBorder(true,Color.red);
                     SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip, transform, 1f, 0.3f);
                     yield return new WaitForSeconds(0.3f);
                 }
