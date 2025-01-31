@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Crt Droid
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: -2932335569171201203, guid: 9296564fc6bb1af45a0934b4c800b842, type: 3}
+  CardDescription: New Gen New Television - 5 damage
   selfTargeting: 0
   Damage: 05000000
   Position: 00000000

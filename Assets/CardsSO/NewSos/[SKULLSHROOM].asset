@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Card
   CardHealth: 2
+  CardPower: 0
   CardSprite: {fileID: 21300000, guid: ec1aeef9aad31ce47a10c1dda8d56823, type: 3}
+  CardDescription: Just a dead mushroom who does ridiculous damage
   selfTargeting: 1
   Damage: 64000000
   Position: 00000000

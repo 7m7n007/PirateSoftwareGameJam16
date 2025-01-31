@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Feline Tank
   CardHealth: 6
-  CardSprite: {fileID: 657003341619623219, guid: 7c4dd25d0c2623b4290fc55c183030a1, type: 3}
+  CardPower: 0
+  CardSprite: {fileID: -5936420602113242680, guid: 7c4dd25d0c2623b4290fc55c183030a1, type: 3}
+  CardDescription: yep..its a cat in a tank - 8 damage
   selfTargeting: 0
-  Damage: 09000000
+  Damage: 08000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: SMall DROID
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: 4837483809143851321, guid: 3c57ebbe0213cda4a84cb204ea41da10, type: 3}
-  CardDescription: 
+  CardDescription: hey ! I am not that small ! - 2 dmg
   selfTargeting: 0
-  Damage: 02000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}

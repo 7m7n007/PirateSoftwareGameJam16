@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Rocket punch
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: 4470543230373532239, guid: ca2754eac92b5154da4d0909466294bc, type: 3}
+  CardDescription: a glove you wear and hen you tear - 4 dmg
   selfTargeting: 0
   Damage: 04000000
   Position: 00000000

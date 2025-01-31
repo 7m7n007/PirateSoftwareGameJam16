@@ -9,15 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: SatelliteDragon
+  m_Script: {fileID: 11500000, guid: 668164af67be9634ca1c6ad50bde0c39, type: 3}
+  m_Name: SatalliteDragon
   m_EditorClassIdentifier: 
-  CardName: Satellite Dragon
-  CardHealth: 10
+  CardName: satellite dragon
+  CardHealth: 0
+  CardPower: 0
   CardSprite: {fileID: 3495722304532540153, guid: 55313c9b838d0c7418c496d27c709a8c, type: 3}
+  CardDescription: A Dragon made of space car parts - 2 dmg to every card
   selfTargeting: 0
-  Damage: 0c000000
+  Damage: 02000000
   Position: 00000000
-  AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
-  TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}
-  AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
+  AttackingClip: {fileID: 0}
+  TargetHitClip: {fileID: 0}
+  AttackingSFX: {fileID: 0}

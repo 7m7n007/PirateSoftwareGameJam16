@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: CometSlasher
   CardHealth: 8
+  CardPower: 0
   CardSprite: {fileID: -3602297481737539184, guid: 5e113f14efd514a478638be0cad5bef5, type: 3}
-  CardDescription: Damages all card equal to CP
+  CardDescription: yep its my favorait card - does 3 damage to all cards
   selfTargeting: 0
-  Damage: 02000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: aeba9dcfeac97ed4787a186778a2e80b, type: 2}

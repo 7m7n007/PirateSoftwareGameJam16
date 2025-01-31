@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Sea Hunter
   CardHealth: 6
+  CardPower: 0
   CardSprite: {fileID: -8792963629088802933, guid: a7fc5ab7eb2d94941881fae52b0e1164, type: 3}
+  CardDescription: Medusa Incarnate - 8 damage 3 main and 2 to other 2
   selfTargeting: 0
-  Damage: 08000000
-  Position: 00000000
+  Damage: 080000000300000003000000
+  Position: 00000000ffffffff01000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 7fad1750c57c38a47972854dcd55b9f8, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}

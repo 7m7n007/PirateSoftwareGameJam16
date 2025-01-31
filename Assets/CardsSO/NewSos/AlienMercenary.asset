@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Alien Merc
   CardHealth: 5
+  CardPower: 0
   CardSprite: {fileID: 5626879056532517104, guid: 824d113e1fa53f044b685451da58b9ac, type: 3}
+  CardDescription: an unknown alien with a gun - 5 damage
   selfTargeting: 0
   Damage: 05000000
   Position: 00000000

@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Hammer
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: -8600468001260584343, guid: 40d932350341c4e4dabb8def007dd756, type: 3}
-  CardDescription: 
+  CardDescription: HAMMER !! - 7 damage
   selfTargeting: 0
-  Damage: 07000000
+  Damage: 08000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

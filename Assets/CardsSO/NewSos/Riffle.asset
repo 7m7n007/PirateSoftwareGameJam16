@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Riffle
   CardHealth: 2
+  CardPower: 0
   CardSprite: {fileID: -8237442502981588206, guid: eabe3488a10225f4ab253aeb904d6a07, type: 3}
+  CardDescription: where can I get one of these ? - 3 dmg
   selfTargeting: 0
-  Damage: 05000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

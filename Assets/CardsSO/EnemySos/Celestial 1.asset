@@ -9,15 +9,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0cd9e750f816842a9182df4bd4a688, type: 3}
-  m_Name: SatelliteDrone
+  m_Script: {fileID: 11500000, guid: 668164af67be9634ca1c6ad50bde0c39, type: 3}
+  m_Name: Celestial 1
   m_EditorClassIdentifier: 
-  CardName: Satellite Drone
-  CardHealth: 4
-  CardSprite: {fileID: 8337817864718060353, guid: e6f43b96e72eeac4d81e02d867f50b8e, type: 3}
+  CardName: celestial
+  CardHealth: 9
+  CardPower: 0
+  CardSprite: {fileID: -9022818084507477029, guid: 99346fab64b46d24b8594989ad7862c0, type: 3}
+  CardDescription: Not your Average Joe Alien - does 2 damage to every card
   selfTargeting: 0
-  Damage: 06000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}
-  AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
+  AttackingSFX: {fileID: 8300000, guid: ac0b94846170c164b906eb2fb1b6581d, type: 3}

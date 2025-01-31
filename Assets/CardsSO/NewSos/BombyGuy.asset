@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Bomb guy
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: -6197023967782372501, guid: 94bd4b5648351ef4ba4f61b90eccf3d4, type: 3}
+  CardDescription: little guy explodes - 6 damage
   selfTargeting: 0
   Damage: 06000000
   Position: 00000000

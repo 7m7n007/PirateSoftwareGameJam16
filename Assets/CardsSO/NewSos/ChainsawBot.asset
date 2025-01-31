@@ -14,10 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: ChainsawBot
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: 4847575914385759273, guid: 89c8f7d88482ba244ba7f08bf1b5bbd2, type: 3}
+  CardDescription: why is chainsawman here ? - 2 damage to main card and the card
+    above
   selfTargeting: 0
-  Damage: 06000000
-  Position: 00000000
+  Damage: 0200000002000000
+  Position: 00000000ffffffff
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 7fad1750c57c38a47972854dcd55b9f8, type: 2}
-  AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
+  AttackingSFX: {fileID: 8300000, guid: 2a33885c6d0c82442bddf0de28dc44bf, type: 3}

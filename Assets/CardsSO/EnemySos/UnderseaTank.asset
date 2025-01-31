@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: UnderseaTank
   m_EditorClassIdentifier: 
   CardName: Undersea Tank
-  CardHealth: 7
+  CardHealth: 6
+  CardPower: 0
   CardSprite: {fileID: -9190651752926323694, guid: a5c8e3a048b23d841939aa6d8cce2aad, type: 3}
-  CardDescription: 
+  CardDescription: I wass low on time so an underwater submarine thats it - 7 dmg
   selfTargeting: 0
-  Damage: 09000000
+  Damage: 08000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

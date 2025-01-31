@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Mushroom Infentry
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: -6818098568474865439, guid: 6642dadaf73dee94e90a330d99d65744, type: 3}
-  CardDescription: 
+  CardDescription: living mushrooms , they dont taste good - 2damage
   selfTargeting: 0
   Damage: 04000000
   Position: 00000000

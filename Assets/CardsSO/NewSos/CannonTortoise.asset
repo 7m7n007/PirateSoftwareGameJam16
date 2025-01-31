@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Cannon Tortoise
   CardHealth: 4
-  CardSprite: {fileID: -3417434044604744192, guid: fc438473c219e924da0f831cee0f528a, type: 3}
+  CardPower: 0
+  CardSprite: {fileID: 3642591564068519241, guid: fc438473c219e924da0f831cee0f528a, type: 3}
+  CardDescription: blastoise much ? - 6 damage
   selfTargeting: 0
   Damage: 06000000
   Position: 00000000

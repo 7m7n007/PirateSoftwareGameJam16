@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Rocket Mech
   CardHealth: 10
+  CardPower: 0
   CardSprite: {fileID: 3927728865926049732, guid: cc6a9b2fd473c774b82d6080613ce854, type: 3}
-  CardDescription: 
+  CardDescription: every boy's fever dream - 11 damage
   selfTargeting: 0
-  Damage: 09000000
+  Damage: 0d000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

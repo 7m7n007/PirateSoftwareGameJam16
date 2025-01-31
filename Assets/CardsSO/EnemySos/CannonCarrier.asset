@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Cannon Carrier
   CardHealth: 6
+  CardPower: 0
   CardSprite: {fileID: -7874495033208818761, guid: 930d474d6bdeeef47afd3342b27e6728, type: 3}
-  CardDescription: 
+  CardDescription: A cannon carrying device - 7 dmg
   selfTargeting: 0
-  Damage: 07000000
+  Damage: 08000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Solar Blade
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: 7934045207989357155, guid: a973417e366130e469ac78331e32fa2b, type: 3}
+  CardDescription: 'a blade thats runs on the energy of the sun - 3 dmg '
   selfTargeting: 0
-  Damage: 07000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 6fac1f87c3e8d8747ba363ba20f1ddfc, type: 2}
