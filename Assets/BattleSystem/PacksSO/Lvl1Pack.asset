@@ -13,9 +13,22 @@ MonoBehaviour:
   m_Name: Lvl1Pack
   m_EditorClassIdentifier: 
   cards:
-  - {fileID: 11400000, guid: 1cb512520763cd2449d967a624ab561b, type: 2}
   - {fileID: 11400000, guid: 837c67b377323414f9c80284fa39ff3c, type: 2}
-  cardsWeights: 0500000005000000
-  packSize: 2
+  - {fileID: 11400000, guid: 39ae6a36eff83a845986e90708b47eae, type: 2}
+  - {fileID: 11400000, guid: f5d2b6d9bed70e342b77329dd7410ae1, type: 2}
+  - {fileID: 11400000, guid: b7eeef3404d252a41addf2787e9853ca, type: 2}
+  - {fileID: 11400000, guid: 41cf63f1b1d4e7144a21bb369fa8765d, type: 2}
+  - {fileID: 11400000, guid: d7d00271365acf8408cb55aa197bf510, type: 2}
+  - {fileID: 11400000, guid: 8130a76cdae5e02468f2f1e9a46084a9, type: 2}
+  - {fileID: 11400000, guid: 6a6f22d1bee8b034abf1f301e577477f, type: 2}
+  - {fileID: 11400000, guid: 4f58aeb111365ab4fb2b5edc4bb8fec7, type: 2}
+  - {fileID: 11400000, guid: 4f9fccda173abc649aca85482405344d, type: 2}
+  - {fileID: 11400000, guid: 411ecd05a8e60e4438b1f412eac586d9, type: 2}
+  - {fileID: 11400000, guid: 48b9e0af43bd370438eeb2648ca54fa6, type: 2}
+  - {fileID: 11400000, guid: 45b12a2b699a6364093a931fd9f29274, type: 2}
+  - {fileID: 11400000, guid: 416a79334acb3094a91ba18872f33301, type: 2}
+  - {fileID: 11400000, guid: 59999859e3ebf0d46860e3bba6e7adbb, type: 2}
+  cardsWeights: 020000000200000002000000050000000500000005000000050000000500000005000000050000000500000005000000050000000500000005000000
+  packSize: 5
   packSprite: {fileID: -3062131529581769233, guid: 788b1174465128f42b12fdfc71afee88, type: 3}
   packAnim: {fileID: 7400000, guid: 682aff76a513e7849bc6a9fc757173a1, type: 2}
