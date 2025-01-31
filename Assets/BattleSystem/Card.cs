@@ -18,6 +18,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     [SerializeField] private int CardDefense;
     [SerializeField] private Sprite CardSprite;
     public static event Action<Card> CardSelected;
+    public int BonusAttack;
     // Reference To Visual Fields
     [SerializeField] GameObject diableImg;
     [SerializeField] TMP_Text cardNameVisual;
@@ -54,7 +55,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
         targetSelf = CardSO.selfTargeting;
         target = null;
         animator = GetComponentInChildren<Animator>();
-
+        BonusAttack=0;
         animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = animatorOverrideController;
         // CardAttack = CardSO.CardAttack;
@@ -104,15 +105,15 @@ public class Card : MonoBehaviour, IPointerClickHandler
         {
             diableImg.SetActive(true);
         }
-        if(isSelectable){
-            Border.GetComponent<RawImage>().color=Color.green;
-            Border.SetActive(true);
-        }
-        else{
+        // if(isSelectable){
+        //     Border.GetComponent<RawImage>().color=Color.green;
+        //     Border.SetActive(true);
+        // }
+        // else{
             
-            Border.GetComponent<RawImage>().color=Color.red;
-            Border.SetActive(false);
-        }
+        //     Border.GetComponent<RawImage>().color=Color.red;
+        //     Border.SetActive(false);
+        // }
         if (CardHealth <= 0)
         {
             Destroy(gameObject);
@@ -121,7 +122,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
 
     public void Action(List<GameObject> targetSlots)
     {
-        CardSO.Action(this, target, targetSlots);
+        CardSO.Action(this, target, targetSlots,BonusAttack);
 
     }
     // public void Attack(int damage){

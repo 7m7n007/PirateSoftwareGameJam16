@@ -14,11 +14,11 @@ public class ChildCard : BaseCard
     [SerializeField] public AnimationClip TargetHitClip;
     [SerializeField] public AudioClip AttackingSFX;
 
-    public override void Action(Card user, Card target, List<GameObject> targetSlots)
+    public override void Action(Card user, Card target, List<GameObject> targetSlots,int Bonus)
     {
         if (target.isUnit)
         {
-            Attack(target, Damage[Damage.Count/2]);
+            Attack(target, Damage[Damage.Count/2]+Bonus);
             target.PlayAnim(TargetHitClip);
         }
         else
@@ -35,7 +35,7 @@ public class ChildCard : BaseCard
                     if (temp != null)
                     {
 
-                        Attack(temp, Damage[i]);
+                        Attack(temp, Damage[i]+Bonus);
                         temp.PlayAnim(TargetHitClip);
                     }
                 }

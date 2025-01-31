@@ -12,7 +12,7 @@ public abstract class BaseCard:ScriptableObject
     public string CardDescription;
     
     public bool selfTargeting;
-    public abstract void Action(Card user,Card target,List<GameObject> targetSlots);
+    public abstract void Action(Card user,Card target,List<GameObject> targetSlots,int Bonus);
     public virtual void Attack(int damage){
         
     }

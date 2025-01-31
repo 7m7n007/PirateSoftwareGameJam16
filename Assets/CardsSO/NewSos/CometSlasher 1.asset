@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 668164af67be9634ca1c6ad50bde0c39, type: 3}
+  m_Name: CometSlasher 1
+  m_EditorClassIdentifier: 
+  CardName: CometSlasher
+  CardHealth: 8
+  CardSprite: {fileID: -3602297481737539184, guid: 5e113f14efd514a478638be0cad5bef5, type: 3}
+  CardDescription: Damages all card equal to CP
+  selfTargeting: 0
+  Damage: 02000000
+  Position: 00000000
+  AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
+  TargetHitClip: {fileID: 7400000, guid: aeba9dcfeac97ed4787a186778a2e80b, type: 2}
+  AttackingSFX: {fileID: 8300000, guid: c63d10220564591449f1319af833b094, type: 3}

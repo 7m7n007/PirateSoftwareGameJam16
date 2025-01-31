@@ -18,6 +18,7 @@ public class BattleManager : MonoBehaviour
     public Card LastSelectedCard;
     public BattleStages battleStages;
     [SerializeField] changePhaseImg changePhaseImg;
+    [SerializeField] changePhaseText changePhaseText;
     [SerializeField] GameObject WinScreen;
     [SerializeField] GameObject LoseScreen;
 
@@ -37,6 +38,8 @@ public class BattleManager : MonoBehaviour
     {
         Card.CardSelected += SelectCard;
         Card.CardDestroyed += GameFinish;
+        
+                changePhaseText.changePhase(changePhaseText.Phases.None);
     }
     private void OnDisable()
     {
@@ -315,6 +318,7 @@ public class BattleManager : MonoBehaviour
 
             while (attackStages == AttackStages.SelectCard)
             {
+                changePhaseText.changePhase(changePhaseText.Phases.selectUser);
                 ActivateCards(newPlayerCards);
                 LastSelectedCard = null;
                 while (LastSelectedCard == null)
@@ -324,9 +328,12 @@ public class BattleManager : MonoBehaviour
                 AttackingCard = LastSelectedCard;
                 attackStages = AttackStages.SelectTarget;
                 DeActivateCards(newPlayerCards);
+                // yield return new WaitForSeconds(1f);
             }
             while (attackStages == AttackStages.SelectTarget)
             {
+                
+                changePhaseText.changePhase(changePhaseText.Phases.selectTarget);
                 if (AttackingCard.targetSelf == false)
                 {
 
@@ -360,8 +367,11 @@ public class BattleManager : MonoBehaviour
 
                 }
             }
+            // yield return new WaitForSeconds(1f);
             while (attackStages == AttackStages.Attack)
             {
+                
+                changePhaseText.changePhase(changePhaseText.Phases.None);
                 if (AttackingCard.targetSelf == false)
                 {
 
@@ -385,6 +395,7 @@ public class BattleManager : MonoBehaviour
                     cardleft -= 1;
 
                 }
+                yield return new WaitForSeconds(1f);
             }
         }
         AttackingCard.target = null;

@@ -4,12 +4,12 @@ using System.ComponentModel.Design.Serialization;
 using UnityEngine;
 using UnityEngine.InputSystem.Interactions;
 
-[CreateAssetMenu(fileName = "HealerCard", menuName = "HealerCard", order = 0)]
-public class HealerCard : BaseCard
+[CreateAssetMenu(fileName = "PowerUpCard", menuName = "PowerUpCard", order = 0)]
+public class PowerUp : BaseCard
 {
     // [SerializeField] public string CardName;
     // [SerializeField] public int CardHealth;
-    [SerializeField] public List<int> Heals;
+    [SerializeField] public List<int> Bonus;
     [SerializeField] public List<int> Position;
 
     [SerializeField] public AnimationClip AttackingClip;
@@ -19,11 +19,11 @@ public class HealerCard : BaseCard
 
     // [SerializeField] public List<int> AttackPattern;
     // [SerializeField] public List<int> PositionPattern;
-    public override void Action(Card user, Card target, List<GameObject> targetSlots,int Bonus)
+    public override void Action(Card user, Card target, List<GameObject> targetSlots,int Bonuss)
     {
         if (target.isUnit)
         {
-            Heal(target, Heals[Heals.Count/2]+Bonus);
+            Heal(target, Bonus[Bonus.Count/2]);
             target.PlayAnim(TargetHitClip);
         }
         else{
@@ -39,7 +39,7 @@ public class HealerCard : BaseCard
                 if (temp != null)
                 {
 
-                    Heal(temp, Heals[i]+Bonus);
+                    Heal(temp, Bonus[i]);
                     temp.PlayAnim(TargetHitClip);
                 }
             }
@@ -55,9 +55,9 @@ public class HealerCard : BaseCard
         if (target != null)
         {
             
-                target.CardHealth += Damage;
-            if(target.CardHealth>target.CardSO.CardHealth){
-                target.CardHealth=target.CardSO.CardHealth;
+            target.BonusAttack += Damage;
+            if(target.BonusAttack>=3){
+                target.BonusAttack=3;
             }
             target.updateCardVisual();
             // target=null;
