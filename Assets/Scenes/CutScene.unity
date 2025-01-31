@@ -211,7 +211,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 520093695
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -593,6 +593,8 @@ GameObject:
   - component: {fileID: 404272409}
   - component: {fileID: 404272411}
   - component: {fileID: 404272410}
+  - component: {fileID: 404272412}
+  - component: {fileID: 404272413}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -657,6 +659,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404272408}
   m_CullTransparentMesh: 1
+--- !u!95 &404272412
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404272408}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!320 &404272413
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 404272408}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: 9ed19c8575883cd4bb3195ca0cbd1286, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 4483555658863679625, guid: 9ed19c8575883cd4bb3195ca0cbd1286, type: 2}
+    value: {fileID: 404272412}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1 &490332371
 GameObject:
   m_ObjectHideFlags: 0
@@ -2330,6 +2373,28 @@ PlayableDirector:
     value: {fileID: 1962833363}
   - key: {fileID: -2573921669259335026, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
     value: {fileID: 1962833363}
+  - key: {fileID: -900440058660192941, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 404272412}
+  - key: {fileID: -7557859499962201469, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 490332373}
+  - key: {fileID: 7060902015801618705, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 513717946}
+  - key: {fileID: -4815331031101863951, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 240278534}
+  - key: {fileID: 5482835657207246387, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 616399964}
+  - key: {fileID: -1050650143180529833, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 1943600805}
+  - key: {fileID: 3732675508339489070, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 1758981286}
+  - key: {fileID: 2664803757916912737, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 539057290}
+  - key: {fileID: 4876207597949424710, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 670491996}
+  - key: {fileID: -4678308055361159341, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 381423729}
+  - key: {fileID: 4184173757497248147, guid: a9da2f64186b90b4e9bca235269bea0c, type: 2}
+    value: {fileID: 812587556}
   m_ExposedReferences:
     m_References: []
 --- !u!114 &1962833365

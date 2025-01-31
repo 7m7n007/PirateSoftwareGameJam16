@@ -19,7 +19,7 @@ public class ShowCard : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
       GameObject newcard = Instantiate(gameObject, CardCanvas.transform.GetChild(0));
       newcard.GetComponentInChildren<Card>().isUnit=false;
 
-      newcard.transform.localScale = new Vector3(4, 4, 1);
+      newcard.transform.localScale = new Vector3(6, 6, 1);
     }
   }
   public void OnPointerUp(PointerEventData eventData)
