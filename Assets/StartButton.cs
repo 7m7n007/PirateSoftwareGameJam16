@@ -20,4 +20,10 @@ public class StartButton : MonoBehaviour
         GameController.GetComponent<SceneController>().LoadScene(SceneName);
     
     }
+    public void RestartLevel(){
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+    public void NextLevel(){
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex+1);
+    }
 }

@@ -26,6 +26,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] bool gameRunning;
 
     [SerializeField] AudioClip SelectAudioClip;
+    [SerializeField] AudioClip WinSFX;
+    [SerializeField] AudioClip LoseSFX;
 
 
     // -------------------Functions-----------------------
@@ -52,12 +54,15 @@ public class BattleManager : MonoBehaviour
     public void GameFinish(bool isPlayerEnemy)
     {
             StopAllCoroutines();
+            
         if(isPlayerEnemy){
          
             WinScreen.SetActive(true);
+            SoundFxManager.Instance.AudioManager(WinSFX,transform,1f);
         }
         else{
             LoseScreen.SetActive(true);
+            SoundFxManager.Instance.AudioManager(LoseSFX,transform,1f);
         }
     }
     public void startBattle()

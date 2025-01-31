@@ -160,7 +160,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      deck button pressed_0: -8118144781346511568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -385,7 +385,17 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      c-006 Rifle -Sheet_0: -1383878324639581207
+      c-006 Rifle -Sheet_1: -1723410423532907917
+      c-006 Rifle -Sheet_2: 6244449372996582625
+      c-006 Rifle -Sheet_3: 7679317100550900373
+      c-006 Rifle -Sheet_4: 7804764386155881909
+      c-006 Rifle -Sheet_5: -5659842086872513428
+      c-006 Rifle -Sheet_6: 2646049201134926195
+      c-006 Rifle -Sheet_7: -7190612627486513561
+      c-006 Rifle -Sheet_8: 30988579617511610
+      c-006 Rifle -Sheet_9: -1581035694745927628
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
