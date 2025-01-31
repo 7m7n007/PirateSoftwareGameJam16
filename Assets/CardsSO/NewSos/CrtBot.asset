@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: CRT bot
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: 6804487082697512688, guid: e7c7468a8ba1ca948a1bc7f1c50aa42e, type: 3}
+  CardDescription: 90's minitv came to life -  3 damage
   selfTargeting: 0
   Damage: 03000000
   Position: 00000000

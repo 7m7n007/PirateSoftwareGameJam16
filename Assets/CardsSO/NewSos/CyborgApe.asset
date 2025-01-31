@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Cyborg Ape
   CardHealth: 9
-  CardSprite: {fileID: 5748534478061679434, guid: 4fb41206c1c576743ab26e532bd6e3e6, type: 3}
+  CardPower: 0
+  CardSprite: {fileID: -6923958602335721403, guid: 4fb41206c1c576743ab26e532bd6e3e6, type: 3}
+  CardDescription: he still needs banana to survive - 5 damage
   selfTargeting: 0
   Damage: 05000000
   Position: 00000000

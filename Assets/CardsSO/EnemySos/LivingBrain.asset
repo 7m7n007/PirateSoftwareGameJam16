@@ -14,11 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Living Brain
   CardHealth: 6
+  CardPower: 0
   CardSprite: {fileID: 8099613792718366388, guid: 7f57e00bec2e537498da76c703b306d1, type: 3}
-  CardDescription: 
+  CardDescription: 'A brain stashed in a box - 1 damage to 3 cards '
   selfTargeting: 0
-  Damage: 03000000
-  Position: 
+  Damage: 020000000200000002000000
+  Position: ffffffff0000000001000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 6fac1f87c3e8d8747ba363ba20f1ddfc, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}

@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: ShotgunMecha
   m_EditorClassIdentifier: 
   CardName: ShotGun Mecha
-  CardHealth: 10
-  CardSprite: {fileID: 1655257700261616584, guid: 21cddfae124b57243bf79870d578b929, type: 3}
+  CardHealth: 6
+  CardPower: 0
+  CardSprite: {fileID: 1183009220462783638, guid: 21cddfae124b57243bf79870d578b929, type: 3}
+  CardDescription: 'ITS A MECH ! WITH A SHOTGUN ! - 3 to main and 2 to adjecent '
   selfTargeting: 0
-  Damage: 06000000
-  Position: 00000000
+  Damage: 030000000200000002000000
+  Position: 00000000ffffffff01000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}

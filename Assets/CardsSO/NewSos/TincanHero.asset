@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: TincanHero
   m_EditorClassIdentifier: 
   CardName: TinCan Hero
-  CardHealth: 8
+  CardHealth: 6
+  CardPower: 0
   CardSprite: {fileID: 2527168770512003102, guid: 733f094423c1a03499620a4fb18cacf0, type: 3}
+  CardDescription: Average japanese who got reincarnated into a trashcan...Literally
+    - 5 dmg
   selfTargeting: 0
   Damage: 05000000
   Position: 00000000

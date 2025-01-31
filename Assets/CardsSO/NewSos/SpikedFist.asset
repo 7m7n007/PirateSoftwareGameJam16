@@ -13,10 +13,12 @@ MonoBehaviour:
   m_Name: SpikedFist
   m_EditorClassIdentifier: 
   CardName: Spiked fist
-  CardHealth: 4
+  CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: -175309861697260039, guid: 7e8e17de8ed302b48bae2fbd71073ad4, type: 3}
+  CardDescription: we attacked spikes to a mannequin - 2 dmg
   selfTargeting: 0
-  Damage: 06000000
+  Damage: 02000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}

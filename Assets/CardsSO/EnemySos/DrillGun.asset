@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: DrillGun
   m_EditorClassIdentifier: 
   CardName: Drill Gun
-  CardHealth: 3
+  CardHealth: 5
+  CardPower: 0
   CardSprite: {fileID: -4508303232892950300, guid: d991d17ba982d094a8584f655123aa7b, type: 3}
-  CardDescription: 
+  CardDescription: lets go all the way ! - 4 damage
   selfTargeting: 0
-  Damage: 07000000
+  Damage: 05000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

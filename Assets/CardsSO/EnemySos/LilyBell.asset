@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: LilyBell
   m_EditorClassIdentifier: 
   CardName: lily Bell
-  CardHealth: 8
+  CardHealth: 10
+  CardPower: 0
   CardSprite: {fileID: 2088500265074828217, guid: 9234229fda787c1459f489833f4ac3e5, type: 3}
-  CardDescription: 
+  CardDescription: 'A human Soul Stuck in the a robot body '
   selfTargeting: 0
-  Damage: 06000000
+  Damage: 08000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 6fac1f87c3e8d8747ba363ba20f1ddfc, type: 2}

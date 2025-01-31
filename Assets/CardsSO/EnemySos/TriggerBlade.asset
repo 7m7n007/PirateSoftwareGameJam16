@@ -13,11 +13,13 @@ MonoBehaviour:
   m_Name: TriggerBlade
   m_EditorClassIdentifier: 
   CardName: Trigger blade
-  CardHealth: 4
+  CardHealth: 5
+  CardPower: 0
   CardSprite: {fileID: -9209783415533319313, guid: c41d5f849565b884e8b1c671c3dbed73, type: 3}
-  CardDescription: 
+  CardDescription: It Triggers its target into submission ! - not for adult purposes
+    - 3 dmg
   selfTargeting: 0
-  Damage: 05000000
+  Damage: 04000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: aeba9dcfeac97ed4787a186778a2e80b, type: 2}

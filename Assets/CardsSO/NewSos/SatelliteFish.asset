@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Satellite Fish
   CardHealth: 2
+  CardPower: 0
   CardSprite: {fileID: -2611975712314329986, guid: 30f8a5a9882f5f74b9232dd86f874b2d, type: 3}
+  CardDescription: A poor satellite lost in space - 3 damage
   selfTargeting: 0
   Damage: 03000000
   Position: 00000000

@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: HealerCard
   m_EditorClassIdentifier: 
   CardName: RepairBuddy
-  CardHealth: 5
-  CardSprite: {fileID: -3732794547521958411, guid: 08c6b7e6d98f0ac4eb7d7d2abcdbd331, type: 3}
-  CardDescription: 
+  CardHealth: 6
+  CardPower: 0
+  CardSprite: {fileID: 6334161937713767778, guid: 18cadd10f620b6f43b672cd96e0854fa, type: 3}
+  CardDescription: A Handyman in space ? how ?! - Heals 3 cards - main and 2 adjecent
   selfTargeting: 1
-  Heals: 020000000200000002000000
+  Heals: 040000000300000002000000
   Position: ffffffff0000000001000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 272956e3635deee4eb437b7d9614c18d, type: 2}

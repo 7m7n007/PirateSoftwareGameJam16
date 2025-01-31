@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: MeteorCLash
   m_EditorClassIdentifier: 
   CardName: Meteor CLash
-  CardHealth: 6
+  CardHealth: 10
+  CardPower: 0
   CardSprite: {fileID: -1377540523818002333, guid: d6b35773d8357794b933ef2424452404, type: 3}
-  CardDescription: 
+  CardDescription: Look mom ! A shooting star ! - 8 damage to 2 cards
   selfTargeting: 0
-  Damage: 0c000000
-  Position: 00000000
+  Damage: 0a0000000a000000
+  Position: ffffffff00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}

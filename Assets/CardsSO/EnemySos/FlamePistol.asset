@@ -14,10 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Flame Pistol
   CardHealth: 3
+  CardPower: 0
   CardSprite: {fileID: -3680904037163850349, guid: bf1722034ddcc964b91e8769f260c454, type: 3}
-  CardDescription: Does Splash Damage Equal to CP
+  CardDescription: Awww I wanted a flamethrower ! - Does Splash Damage Equal to CP
   selfTargeting: 0
-  Damage: 020000000300000002000000
+  Damage: 030000000400000003000000
   Position: ffffffff0000000001000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}

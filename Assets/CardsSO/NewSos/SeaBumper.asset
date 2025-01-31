@@ -14,7 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Sea Bumber
   CardHealth: 7
+  CardPower: 0
   CardSprite: {fileID: -9092620090332372817, guid: 7b5f850609f99d04cbcc907b026450d4, type: 3}
+  CardDescription: Ouch ! watch your step ! - 4 dmg
   selfTargeting: 0
   Damage: 04000000
   Position: 00000000

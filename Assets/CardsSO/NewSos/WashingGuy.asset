@@ -14,9 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Washing Guy
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: 6111498132834192785, guid: 3e92452163f868c48b6bb6e5fabacdc6, type: 3}
+  CardDescription: it can wash my cloths on its own - 3 dmg
   selfTargeting: 0
-  Damage: 06000000
+  Damage: 03000000
   Position: 00000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: f004cb76f82672b4d9ad43b9856d2cb7, type: 2}

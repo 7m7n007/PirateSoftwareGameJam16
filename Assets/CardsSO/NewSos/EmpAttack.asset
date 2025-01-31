@@ -14,10 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CardName: Emp Attack
   CardHealth: 4
+  CardPower: 0
   CardSprite: {fileID: -4276483684481473165, guid: fcac72f45ffdbb443a44b47c6fbefddf, type: 3}
+  CardDescription: comet slasher's heart - does 1 damage to 3 enemies
   selfTargeting: 0
-  Damage: 02000000
-  Position: 00000000
+  Damage: 010000000100000001000000
+  Position: ffffffff0000000001000000
   AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
   TargetHitClip: {fileID: 7400000, guid: 5d48b0769e08b0a41960135c65d2e5b3, type: 2}
   AttackingSFX: {fileID: 8300000, guid: e603a3a2ab41dc448a66e4f0151e287a, type: 3}
