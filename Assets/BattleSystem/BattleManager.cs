@@ -29,6 +29,8 @@ public class BattleManager : MonoBehaviour
     [SerializeField] AudioClip WinSFX;
     [SerializeField] AudioClip LoseSFX;
 
+    [SerializeField] List<BaseCard> RewardCards;
+    public int RewardMoney;
 
     // -------------------Functions-----------------------
     private void OnEnable()
@@ -58,6 +60,7 @@ public class BattleManager : MonoBehaviour
         if(isPlayerEnemy){
          
             WinScreen.SetActive(true);
+            GiveReward(RewardCards,RewardMoney);
             SoundFxManager.Instance.AudioManager(WinSFX,transform,1f);
         }
         else{
@@ -463,6 +466,13 @@ public class BattleManager : MonoBehaviour
             }
         }
         // return targets;
+    }
+    public void GiveReward(List<BaseCard> RewardCards,int coins){
+        foreach (BaseCard card in RewardCards){
+            GameObject.FindWithTag("GameController").GetComponent<CardsData>().ShopCards.Add(card);
+
+        }
+        GameObject.FindWithTag("GameController").GetComponent<CardsData>().money+=coins;
     }
 
 }

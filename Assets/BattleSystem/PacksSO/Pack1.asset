@@ -18,5 +18,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 068f9645f54c13340beadc2817e6bad2, type: 2}
   - {fileID: 11400000, guid: 2ebccba2df819fd43a8fb2a2f23b6bb2, type: 2}
   - {fileID: 11400000, guid: 4f9fccda173abc649aca85482405344d, type: 2}
-  cardsWeights: 0100000001000000020000000200000004000000
+  cardsWeights: 1400000014000000050000000a00000032000000
   packSize: 5
