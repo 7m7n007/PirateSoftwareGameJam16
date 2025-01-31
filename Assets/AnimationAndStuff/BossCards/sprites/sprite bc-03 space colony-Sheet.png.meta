@@ -1,0 +1,335 @@
+fileFormatVersion: 2
+guid: f2c89ce83aebb0f47817e70f823169fc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -234008762377819306
+    second: sprite bc-03 space colony-Sheet_0
+  - first:
+      213: -6184914236068941328
+    second: sprite bc-03 space colony-Sheet_1
+  - first:
+      213: -586623156452223111
+    second: sprite bc-03 space colony-Sheet_2
+  - first:
+      213: -902675764953109289
+    second: sprite bc-03 space colony-Sheet_3
+  - first:
+      213: -7141821801114483023
+    second: sprite bc-03 space colony-Sheet_4
+  - first:
+      213: -7089430468326757636
+    second: sprite bc-03 space colony-Sheet_5
+  - first:
+      213: -7547107818609793448
+    second: sprite bc-03 space colony-Sheet_6
+  - first:
+      213: -1924180718155308006
+    second: sprite bc-03 space colony-Sheet_7
+  - first:
+      213: 6316811590451726150
+    second: sprite bc-03 space colony-Sheet_8
+  - first:
+      213: -1434468401260216734
+    second: sprite bc-03 space colony-Sheet_9
+  - first:
+      213: -1947231622988350988
+    second: sprite bc-03 space colony-Sheet_10
+  - first:
+      213: 8466203366995382976
+    second: sprite bc-03 space colony-Sheet_11
+  - first:
+      213: -550318447905333460
+    second: sprite bc-03 space colony-Sheet_12
+  - first:
+      213: -4744686880284672160
+    second: sprite bc-03 space colony-Sheet_13
+  - first:
+      213: -8679225100327154577
+    second: sprite bc-03 space colony-Sheet_14
+  - first:
+      213: 7623861862630221239
+    second: sprite bc-03 space colony-Sheet_15
+  - first:
+      213: 4685540616388355601
+    second: sprite bc-03 space colony-Sheet_16
+  - first:
+      213: 1508370757252964682
+    second: sprite bc-03 space colony-Sheet_17
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b242c3542a0ccf0800000000000000
+      internalID: -234008762377819306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f1bad87545ca2aa0800000000000000
+      internalID: -6184914236068941328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97795a6e855ebd7f0800000000000000
+      internalID: -586623156452223111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcad92ac2d0973f0800000000000000
+      internalID: -902675764953109289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb78202e6c52bd047bec3da450114381
+      internalID: -7141821801114483023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite bc-03 space colony-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 0
+        width: 130
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611cb30bad59d084b8089184236c2eeb
+      internalID: -7089430468326757636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3f196bcb92073c6468fd53215bbe8a86
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      sprite bc-03 space colony-Sheet_0: -234008762377819306
+      sprite bc-03 space colony-Sheet_1: -6184914236068941328
+      sprite bc-03 space colony-Sheet_2: -586623156452223111
+      sprite bc-03 space colony-Sheet_3: -902675764953109289
+      sprite bc-03 space colony-Sheet_4: -7141821801114483023
+      sprite bc-03 space colony-Sheet_5: -7089430468326757636
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
