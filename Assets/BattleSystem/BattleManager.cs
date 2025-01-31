@@ -38,8 +38,8 @@ public class BattleManager : MonoBehaviour
     {
         Card.CardSelected += SelectCard;
         Card.CardDestroyed += GameFinish;
-        
-                changePhaseText.changePhase(changePhaseText.Phases.None);
+
+        changePhaseText.changePhase(changePhaseText.Phases.None);
     }
     private void OnDisable()
     {
@@ -58,17 +58,19 @@ public class BattleManager : MonoBehaviour
     }
     public void GameFinish(bool isPlayerEnemy)
     {
-            StopAllCoroutines();
-            
-        if(isPlayerEnemy){
-         
+        StopAllCoroutines();
+
+        if (isPlayerEnemy)
+        {
+
             WinScreen.SetActive(true);
-            GiveReward(RewardCards,RewardMoney);
-            SoundFxManager.Instance.AudioManager(WinSFX,transform,1f);
+            GiveReward(RewardCards, RewardMoney);
+            SoundFxManager.Instance.AudioManager(WinSFX, transform, 1f);
         }
-        else{
+        else
+        {
             LoseScreen.SetActive(true);
-            SoundFxManager.Instance.AudioManager(LoseSFX,transform,1f);
+            SoundFxManager.Instance.AudioManager(LoseSFX, transform, 1f);
         }
     }
     public void startBattle()
@@ -332,7 +334,7 @@ public class BattleManager : MonoBehaviour
             }
             while (attackStages == AttackStages.SelectTarget)
             {
-                
+
                 changePhaseText.changePhase(changePhaseText.Phases.selectTarget);
                 if (AttackingCard.targetSelf == false)
                 {
@@ -370,7 +372,7 @@ public class BattleManager : MonoBehaviour
             // yield return new WaitForSeconds(1f);
             while (attackStages == AttackStages.Attack)
             {
-                
+
                 changePhaseText.changePhase(changePhaseText.Phases.None);
                 if (AttackingCard.targetSelf == false)
                 {
@@ -450,40 +452,47 @@ public class BattleManager : MonoBehaviour
         List<Card> enemyCardNotNull = EnemyCards;
         enemyCardNotNull.RemoveAll(x => !x);
 
-        if(PlayerUnit.GetComponent<PlayerUnit>().Barrier<PlayerUnit.GetComponent<PlayerUnit>().BarrierThreshold){
+        if (PlayerUnit.GetComponent<PlayerUnit>().Barrier < PlayerUnit.GetComponent<PlayerUnit>().BarrierThreshold)
+        {
             playerCardNotNull.Add(PlayerUnit.GetComponentInChildren<Card>());
         }
 
         List<Card> targets = new List<Card>();
-        foreach (Card enemy in EnemyCards)
+        if (EnemyCards.Count > 0)
         {
-            if (enemy != null)
+
+            foreach (Card enemy in EnemyCards)
             {
-
-                if (enemy.targetSelf == false)
+                if (enemy != null)
                 {
 
-                    enemy.target = PlayerCards[UnityEngine.Random.Range(0, playerCardNotNull.Count)];
+                    if (enemy.targetSelf == false)
+                    {
 
-                }
-                else
-                {
-                    enemy.target = EnemyCards[UnityEngine.Random.Range(0, enemyCardNotNull.Count)];
+                        enemy.target = PlayerCards[UnityEngine.Random.Range(0, playerCardNotNull.Count)];
 
+                    }
+                    else
+                    {
+                        enemy.target = EnemyCards[UnityEngine.Random.Range(0, enemyCardNotNull.Count)];
+
+                    }
+                    enemy.target.setBorder(true);
+                    SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip, transform, 1f, 0.3f);
+                    yield return new WaitForSeconds(0.3f);
                 }
-                enemy.target.setBorder(true);
-                SoundFxManager.Instance.AudioManagerFixedTime(SelectAudioClip, transform, 1f, 0.3f);
-                yield return new WaitForSeconds(0.3f);
             }
         }
         // return targets;
     }
-    public void GiveReward(List<BaseCard> RewardCards,int coins){
-        foreach (BaseCard card in RewardCards){
+    public void GiveReward(List<BaseCard> RewardCards, int coins)
+    {
+        foreach (BaseCard card in RewardCards)
+        {
             GameObject.FindWithTag("GameController").GetComponent<CardsData>().ShopCards.Add(card);
 
         }
-        GameObject.FindWithTag("GameController").GetComponent<CardsData>().money+=coins;
+        GameObject.FindWithTag("GameController").GetComponent<CardsData>().money += coins;
     }
 
 }

@@ -14,9 +14,10 @@ public class Card : MonoBehaviour, IPointerClickHandler
     // [SerializeField] TMP_Text cardName;
     [SerializeField] private string CardName;
     [SerializeField] public int CardHealth;
-    [SerializeField] private int CardAttack;
+    [SerializeField] public int CardAttack;
+    [SerializeField] public string CardDesc;
     [SerializeField] private int CardDefense;
-    [SerializeField] private Sprite CardSprite;
+    [SerializeField] public Sprite CardSprite;
     public static event Action<Card> CardSelected;
     public int BonusAttack;
     // Reference To Visual Fields
@@ -51,13 +52,17 @@ public class Card : MonoBehaviour, IPointerClickHandler
         isActive = true;
         CardName = CardSO.CardName;
         CardHealth = CardSO.CardHealth;
+        CardAttack = CardSO.CardPower;
         CardSprite = CardSO.CardSprite;
+        CardDesc = CardSO.CardDescription;
         targetSelf = CardSO.selfTargeting;
         target = null;
         animator = GetComponentInChildren<Animator>();
         BonusAttack=0;
         animatorOverrideController = new AnimatorOverrideController(animator.runtimeAnimatorController);
         animator.runtimeAnimatorController = animatorOverrideController;
+        cardDescription.text = CardDesc;
+        cardImg.sprite = CardSprite;
         // CardAttack = CardSO.CardAttack;
         // CardDefense = CardSO.CardDefense;
 
@@ -149,12 +154,10 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public void updateCardVisual()
     {
         // Update Visual
-        // print("Updating Visuals");
+        print("Updating Visuals"+CardName);
         cardNameVisual.text = CardName.ToString();
         cardAttackVisual.text = CardAttack.ToString();
         cardHealthVisual.text = CardHealth.ToString();
-        cardDescription.text = CardSO.CardDescription;
-        cardImg.sprite = CardSprite;
         // cardImg=CardSprite;
     }
     public void OnPointerClick(PointerEventData eventData)

@@ -7,7 +7,7 @@ public abstract class BaseCard:ScriptableObject
 {
     public string CardName="Card";
     public int CardHealth;
-    // public Card target;
+    public int CardPower;
     public Sprite CardSprite;
     public string CardDescription;
     

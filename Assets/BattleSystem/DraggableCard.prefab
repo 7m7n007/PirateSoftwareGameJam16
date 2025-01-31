@@ -107,7 +107,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 130, y: 160}
+  m_SizeDelta: {x: 131, y: 181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8101377447050830417
 CanvasRenderer:
@@ -374,6 +374,7 @@ GameObject:
   - component: {fileID: 5157408759316794401}
   - component: {fileID: 4883202295339801104}
   - component: {fileID: 2485255100629368763}
+  - component: {fileID: 6755968877382047556}
   m_Layer: 5
   m_Name: DraggableCard
   m_TagString: Untagged
@@ -525,8 +526,10 @@ MonoBehaviour:
   CardName: 
   CardHealth: 0
   CardAttack: 0
+  CardDesc: 
   CardDefense: 0
   CardSprite: {fileID: 0}
+  BonusAttack: 0
   diableImg: {fileID: 1201125533190286106}
   cardNameVisual: {fileID: 6522869180392988559}
   cardAttackVisual: {fileID: 4593828279045734125}
@@ -551,12 +554,26 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102424193721989653}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3f11ee0e0d7e58f4b8926a5f9e6a468b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CardCanvas: {fileID: 0}
+--- !u!114 &6755968877382047556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102424193721989653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e847c5359a376e348b9756c91d0f94bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CardCanvas: {fileID: 0}
+  blankCard: {fileID: 3398670598644994280, guid: 6a2e67a42c10dde4b9f84f9fc54a0860, type: 3}
 --- !u!1 &5028770294973518368
 GameObject:
   m_ObjectHideFlags: 0
@@ -981,7 +998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32.1, y: -32.5}
+  m_AnchoredPosition: {x: 32.1, y: -36.6}
   m_SizeDelta: {x: 67.616, y: 40.2071}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7771434077329273631
@@ -1325,7 +1342,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 32, y: -49.4}
+  m_AnchoredPosition: {x: 32, y: -56.4}
   m_SizeDelta: {x: 41.6409, y: 24.4183}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8409649964165312826
