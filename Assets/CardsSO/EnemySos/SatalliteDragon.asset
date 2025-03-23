@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: SatalliteDragon
   m_EditorClassIdentifier: 
   CardName: satellite dragon
-  CardHealth: 0
+  CardHealth: 13
   CardPower: 0
   CardSprite: {fileID: 1579563459171781176, guid: 55313c9b838d0c7418c496d27c709a8c, type: 3}
   CardDescription: A Dragon made of space car parts - 2 dmg to every card
   selfTargeting: 0
-  Damage: 04000000
+  Damage: 02000000
   Position: 00000000
-  AttackingClip: {fileID: 0}
-  TargetHitClip: {fileID: 0}
-  AttackingSFX: {fileID: 0}
+  AttackingClip: {fileID: 7400000, guid: 98602b960cf38844fa479b88067f2336, type: 2}
+  TargetHitClip: {fileID: 7400000, guid: aeba9dcfeac97ed4787a186778a2e80b, type: 2}
+  AttackingSFX: {fileID: 8300000, guid: ac0b94846170c164b906eb2fb1b6581d, type: 3}

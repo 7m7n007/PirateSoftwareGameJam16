@@ -32,6 +32,9 @@ public class BattleManager : MonoBehaviour
 
     [SerializeField] List<BaseCard> RewardCards;
     [SerializeField] List<Pack> RewardPacks;
+
+    [SerializeField] StateChecker enemyTurnChecker;
+    [SerializeField] StateChecker roundRestartChecker;
     public int RewardMoney;
 
     // -------------------Functions-----------------------
@@ -101,6 +104,7 @@ public class BattleManager : MonoBehaviour
 
     public IEnumerator NextRound()
     {
+        
         changePhaseImg.changePhase(changePhaseImg.BattlePhases.SetUpPhase);
         Deck.DrawOneCard();
         yield return StartCoroutine(EnemyPlacesCard());
@@ -142,13 +146,17 @@ public class BattleManager : MonoBehaviour
         // Enemy DEcides Attack
         yield return StartCoroutine(EnemyAi(EnemyCards, PlayerCards));
         changePhaseImg.changePhase(changePhaseImg.BattlePhases.PlayerAttack);
-
+        DeActivateCards(EnemyCards);
         // Player Attacks One by One
         yield return StartCoroutine(Action2(PlayerCards, EnemyCards));
 
         changePhaseImg.changePhase(changePhaseImg.BattlePhases.EnemyAttack);
+        ActivateCards(EnemyCards);
         print("Enemies Turn");
+
+
         yield return new WaitForSeconds(2f);
+        enemyTurnChecker.changeState();
 
 
         ActivateCards(PlayerCards);
@@ -168,12 +176,15 @@ public class BattleManager : MonoBehaviour
         PlayerReady(false);
         // Restart
 
+        roundRestartChecker.changeState();
 
         // Disable Drag of Cards
         foreach (Card card in PlayerCards)
         {
             card.GetComponent<drag>().enabled = true;
         }
+        // ActivateCards(PlayerCards);
+        // ActivateCards(EnemyCards);
         // foreach (Card card in EnemyCards)
         // {
         //     card.GetComponent<drag>().enabled = true;

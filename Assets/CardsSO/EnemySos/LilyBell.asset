@@ -16,7 +16,7 @@ MonoBehaviour:
   CardHealth: 10
   CardPower: 0
   CardSprite: {fileID: 2088500265074828217, guid: 9234229fda787c1459f489833f4ac3e5, type: 3}
-  CardDescription: 'A human Soul Stuck in the a robot body '
+  CardDescription: 'A human Soul Stuck in the a robot body : 8 Damage'
   selfTargeting: 0
   Damage: 08000000
   Position: 00000000

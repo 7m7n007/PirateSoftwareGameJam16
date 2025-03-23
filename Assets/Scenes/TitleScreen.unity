@@ -834,6 +834,8 @@ GameObject:
   - component: {fileID: 249607700}
   - component: {fileID: 249607701}
   - component: {fileID: 249607702}
+  - component: {fileID: 249607703}
+  - component: {fileID: 249607704}
   m_Layer: 0
   m_Name: GameController
   m_TagString: GameController
@@ -898,7 +900,37 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f5d2b6d9bed70e342b77329dd7410ae1, type: 2}
   ShopPacks:
   - {fileID: 11400000, guid: f8cf9d204f23149479aa091e2e2e62a6, type: 2}
+  - {fileID: 11400000, guid: 56c4c0e574fbbac4da10aaaf53b854a6, type: 2}
+  - {fileID: 11400000, guid: d4ef7cc988e3fa3498cab7f8aabb8ffa, type: 2}
   money: 40
+--- !u!114 &249607703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249607699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04b13c992c5b442488d964ce79035695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shopTutorialState: 0
+  tutorialComplete: 0
+--- !u!114 &249607704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249607699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f325d7643059b3647b9823592e7088ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleTutorialState: 0
+  tutorialComplete: 0
 --- !u!1 &302062683
 GameObject:
   m_ObjectHideFlags: 0

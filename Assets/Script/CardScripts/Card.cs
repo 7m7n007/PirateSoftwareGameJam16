@@ -161,7 +161,7 @@ public class Card : MonoBehaviour, IPointerClickHandler
     public void updateCardVisual()
     {
         // Update Visual
-        print("Updating Visuals"+CardName);
+        // print("Updating Visuals"+CardName);
         cardNameVisual.text = CardName.ToString();
         cardAttackVisual.text = CardAttack.ToString();
         cardHealthVisual.text = CardHealth.ToString();
